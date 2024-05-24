@@ -31,31 +31,30 @@ input_file = h5py.File(f'{ds}{snap_str}.hdf5', 'r')
 cat_file = f'/orange/narayanan/d.zimmerman/camels_results/catalogs_saved/{sim_id}/groups_{snap_num}.hdf5'
 catalog = h5py.File(cat_file,'r')
 
-gal_count = len(obj.galaxies)
+
+group_len_gas = catalog['Group/GroupLenType'][:,0]
+group_len_star = catalog['Group/GroupLenType'][:,4]
+
+subhalo_len_gas = catalog['Subhalo/SubhaloLenType'][:,0]
+subhalo_len_star = catalog['Subhalo/SubhaloLenType'][:,4]
+
+group_substart = catalog['Group/GroupFirstSub'][:]
+group_subcount = catalog['Group/GroupNsubs'][:]
+subhalo_groupnum = catalog['Subhalo/SubhaloGrNr'][:]
+
+
+num = np.array(range(len(subhalo_len_gas)),dtype=int)
+
+gal_list = num[subhalo_len_star >= 24]
+gal_count = len(gal_list)
 
 if(max_num < 0):
     gal_max = gal_count
 else:
     gal_max = max_num
 
-group_len_gas = cat_file['Group/GroupLenType'][:,0]
-group_len_star = cat_file['Group/GroupLenType'][:,4]
 
-subhalo_len_gas = cat_file['Subhalo/SubhaloLenType'][:,0]
-subhalo_len_star = cat_file['Subhalo/SubhaloLenType'][:,4]
-
-group_substart = cat_file['Group/GroupFirstSub'][:]
-group_subcount = cat_file['Group/GroupNsubs'][:]
-subhalo_groupnum = cat_file['Subhalo/SubhaloGrNr'][:]
-
-
-num = np.array(range(len(sub_len_gas)),dtype=int)
-
-gal_list = num[subhalo_len_star >= 24]
-
-
-
-for galaxy in range(len(gal_list)):
+for galaxy in range(gal_max):
     subhalo = gal_list[int(galaxy)]
     outfile = f'{output_path}/galaxy_{galaxy}.hdf5'
     print('creating snapshot for galaxy '+str(galaxy))
@@ -63,7 +62,7 @@ for galaxy in range(len(gal_list)):
     
     with h5py.File(outfile, 'w') as output_file: 
         output_file.copy(input_file['Header'], 'Header')
-        output_file.copy(cat_file['Config'], 'Config')
+        output_file.copy(catalog['Config'], 'Config')
         
         print('copying gas attributes')
         output_file.create_group('PartType0')

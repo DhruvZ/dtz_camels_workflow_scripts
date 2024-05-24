@@ -38,27 +38,15 @@ in_subfind_dir="${CAMELS_SUBFIND_DIR}${sim_name}/1P/1P_p${run_1p_param}_${run_1p
 out_sim_dir="/sims_loaded/${sim_name}_1P_p${run_1p_param}_${run_1p_num}/"
 out_cat_dir="/catalogs_loaded/${sim_name}_1P_p${run_1p_param}_${run_1p_num}/"
 
-if [ "$sim_name" = "SIMBA" ]
-then
-        in_cat_dir=$in_caes_dir
-elif [ "$sim_name" = "IllustrisTNG" ]
-then
-        in_cat_dir=$in_subfind_dir
-else
-        in_cat_dir="failed - 1 or 0 not entered"
-fi
-
-
-
-
-
-
 
 module load globus
 globus transfer --recursive --dry-run ${CAMELS_GLOBUS}:${in_sim_dir} ${HPG_COLLECT_GLOBUS}:${out_sim_dir}
 echo -e "\n"
-globus transfer --recursive --dry-run ${CAMELS_GLOBUS}:${in_cat_dir} ${HPG_COLLECT_GLOBUS}:${out_cat_dir}
+globus transfer --recursive --dry-run ${CAMELS_GLOBUS}:${in_caes_dir} ${HPG_COLLECT_GLOBUS}:${out_cat_dir}
 echo -e "\n"
+globus transfer --recursive --dry-run ${CAMELS_GLOBUS}:${in_subfind_dir} ${HPG_COLLECT_GLOBUS}:${out_cat_dir}
+echo -e "\n"
+
 
 echo -e "Please confirm the transfer is correct (y/n):"
 
@@ -69,8 +57,9 @@ then
 	echo -e "confirmed"
 	globus transfer --recursive ${CAMELS_GLOBUS}:${in_sim_dir} ${HPG_COLLECT_GLOBUS}:${out_sim_dir}
 	echo -e "\n"
-	globus transfer --recursive ${CAMELS_GLOBUS}:${in_cat_dir} ${HPG_COLLECT_GLOBUS}:${out_cat_dir}
+	globus transfer --recursive ${CAMELS_GLOBUS}:${in_caes_dir} ${HPG_COLLECT_GLOBUS}:${out_cat_dir}
 	echo -e "\n"
+	globus transfer --recursive ${CAMELS_GLOBUS}:${in_subfind_dir} ${HPG_COLLECT_GLOBUS}:${out_cat_dir}
 else
 	echo -e "transfer cancelled"
 fi

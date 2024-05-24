@@ -8,11 +8,11 @@ import h5py
 sim_id = sys.argv[1]
 num = int(sys.argv[2])
 
-fileroot = f'/orange/narayanan/d.zimmerman/camels_results/catalogs_saved/{sim_id}/group_'
+fileroot = f'/orange/narayanan/d.zimmerman/camels_results/catalogs_saved/{sim_id}/groups_'
 saveroot = f'/orange/narayanan/d.zimmerman/camels_results/filtered/{sim_id}/snap'
 fileex='.hdf5'
 
-gal_ids = np.load(f'{saveroot}{num}/snap{num}_subhaloIDs.npy',dtype=int)
+gal_ids = np.load(f'{saveroot}{num}/snap{num}_subhaloIDs.npy')
 
 
 #for num in snapnums:

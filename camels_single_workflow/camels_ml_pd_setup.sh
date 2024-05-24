@@ -31,19 +31,19 @@ sim=$(awk '{if(NR==1) print $0}' /orange/narayanan/d.zimmerman/camels_scripts/ca
 run_1p_param=$(awk '{if(NR==2) print $0}' /orange/narayanan/d.zimmerman/camels_scripts/camels_config.txt)
 run_1p_num=$(awk '{if(NR==3) print $0}' /orange/narayanan/d.zimmerman/camels_scripts/camels_config.txt)
 
+caes_in_name="caesar_newsnaps"
+caes_out_name="caesar"
+subfind_in_name="groups"
+subfind_out_name="groups"
 
 if [ "$sim" = "0" ]
 then
         sim_name="SIMBA"
 	mkdir /orange/narayanan/d.zimmerman/camels_results/filtered/${sim_name}_1P_p${run_1p_param}_${run_1p_num}/snap${SLURM_ARRAY_TASK_ID}
-	cat_in_name="caesar_newsnaps"
-	cat_out_name="caesar"
 elif [ "$sim" = "1" ]
 then
         sim_name="IllustrisTNG"
 	mkdir /orange/narayanan/d.zimmerman/camels_results/filtered/${sim_name}_1P_p${run_1p_param}_${run_1p_num}/snap${SLURM_ARRAY_TASK_ID}
-	cat_in_name="groups"
-	cat_out_name="groups"
 else
         sim_name="failed - 1 or 0 not entered"
 fi
@@ -56,19 +56,17 @@ echo $SLURM_ARRAY_TASK_ID
 
 if [ $(($SLURM_ARRAY_TASK_ID)) -lt 10 ]
 then
-	cp /orange/narayanan/d.zimmerman/camels_results/catalogs_loaded/${sim_id}/${cat_in_name}_00${SLURM_ARRAY_TASK_ID}.hdf5 /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/${sim_id}/${cat_out_name}_${SLURM_ARRAY_TASK_ID}.hdf5
+	cp /orange/narayanan/d.zimmerman/camels_results/catalogs_loaded/${sim_id}/${caes_in_name}_00${SLURM_ARRAY_TASK_ID}.hdf5 /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/${sim_id}/${caes_out_name}_${SLURM_ARRAY_TASK_ID}.hdf5
+	cp /orange/narayanan/d.zimmerman/camels_results/catalogs_loaded/${sim_id}/${subfind_in_name}_00${SLURM_ARRAY_TASK_ID}.hdf5 /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/${sim_id}/${subfind_out_name}_${SLURM_ARRAY_TASK_ID}.hdf5
 elif [ $(($SLURM_ARRAY_TASK_ID)) -lt 100 ]
 then
-	cp /orange/narayanan/d.zimmerman/camels_results/catalogs_loaded/${sim_id}/${cat_in_name}_0${SLURM_ARRAY_TASK_ID}.hdf5 /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/${sim_id}/${cat_out_name}_${SLURM_ARRAY_TASK_ID}.hdf5
+	cp /orange/narayanan/d.zimmerman/camels_results/catalogs_loaded/${sim_id}/${caes_in_name}_0${SLURM_ARRAY_TASK_ID}.hdf5 /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/${sim_id}/${caes_out_name}_${SLURM_ARRAY_TASK_ID}.hdf5
+	 cp /orange/narayanan/d.zimmerman/camels_results/catalogs_loaded/${sim_id}/${subfind_in_name}_0${SLURM_ARRAY_TASK_ID}.hdf5 /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/${sim_id}/${subfind_out_name}_${SLURM_ARRAY_TASK_ID}.hdf5
 else
-        cp /orange/narayanan/d.zimmerman/camels_results/catalogs_loaded/${sim_id}/${cat_in_name}_${SLURM_ARRAY_TASK_ID}.hdf5 /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/${sim_id}/${cat_out_name}_${SLURM_ARRAY_TASK_ID}.hdf5
+        cp /orange/narayanan/d.zimmerman/camels_results/catalogs_loaded/${sim_id}/${caes_in_name}_${SLURM_ARRAY_TASK_ID}.hdf5 /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/${sim_id}/${caes_out_name}_${SLURM_ARRAY_TASK_ID}.hdf5
+	cp /orange/narayanan/d.zimmerman/camels_results/catalogs_loaded/${sim_id}/${subfind_in_name}_${SLURM_ARRAY_TASK_ID}.hdf5 /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/${sim_id}/${subfind_out_name}_${SLURM_ARRAY_TASK_ID}.hdf5
 fi
 
-
-python /orange/narayanan/d.zimmerman/camels_scripts/filter_simba_camels_setup.py $sim_name $run_1p_param $run_1p_num $SLURM_ARRAY_TASK_ID -1
-python /orange/narayanan/d.zimmerman/camels_scripts/galaxy_positions.py ${sim_id} ${SLURM_ARRAY_TASK_ID}
-python /orange/narayanan/d.zimmerman/camels_scripts/caesar_good_gal_script.py ${sim_id} ${SLURM_ARRAY_TASK_ID}
-python /orange/narayanan/d.zimmerman/camels_scripts/powderday_setup.py ${sim_id} ${SLURM_ARRAY_TASK_ID}
 
 if [ "${sim_name}" = "SIMBA" ]
 then
@@ -84,7 +82,6 @@ else
 	python /orange/narayanan/d.zimmerman/camels_scripts/powderday_setup.py ${sim_id} ${SLURM_ARRAY_TASK_ID}
 	cp /orange/narayanan/d.zimmerman/camels_scripts/parameters_master_camels_illustris.py /orange/narayanan/d.zimmerman/camels_results/pd_scripts/${sim_id}/snap${SLURM_ARRAY_TASK_ID}/parameters_master_camels.py
 fi
-
 
 
 
