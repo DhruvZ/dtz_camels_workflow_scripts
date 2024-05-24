@@ -1,0 +1,75 @@
+#!/bin/bash
+#SBATCH --job-name=camels_setup
+#SBATCH --output=array_%A-%a.log
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=d.zimmerman@ufl.edu
+#SBATCH --ntasks=4
+#SBATCH --nodes=1
+#SBATCH --mem=10gb
+#SBATCH --account=narayanan
+#SBATCH --qos=narayanan-b
+#SBATCH --time=96:00:00
+#SBATCH --array=14,18,24,32,44,62,90
+
+
+
+date;hostname;pwd;
+cd /home/d.zimmerman
+module purge
+source .bashrc
+
+conda activate /blue/narayanan/d.zimmerman/code_environments/master_el8_environment
+
+module load git
+#module load gcc/12.2.0
+module load intel/2020.0.166
+module load openmpi/4.1.5
+module load hdf5/1.14.1
+
+
+sim_num=$1
+sim=$(awk '{if(NR==4*n+1) print $0}' n=${sim_num} /orange/narayanan/d.zimmerman/camels_scripts/camels_config2.txt)
+run_1p_param=$(awk '{if(NR==4*n+2) print $0}' n=${sim_num} /orange/narayanan/d.zimmerman/camels_scripts/camels_config2.txt)
+run_1p_num=$(awk '{if(NR==4*n+3) print $0}' n=${sim_num} /orange/narayanan/d.zimmerman/camels_scripts/camels_config2.txt)
+
+if [ "$sim" = "0" ]
+then
+        sim_name="SIMBA"
+	mkdir /orange/narayanan/d.zimmerman/camels_results/filtered/${sim_name}_1P_p${run_1p_param}_${run_1p_num}/snap${SLURM_ARRAY_TASK_ID}
+elif [ "$sim" = "1" ]
+then
+        sim_name="IllustrisTNG"
+	mkdir /orange/narayanan/d.zimmerman/camels_results/filtered/${sim_name}_1P_p${run_1p_param}_${run_1p_num}/snap${SLURM_ARRAY_TASK_ID}
+else
+        sim_name="failed - 1 or 0 not entered"
+fi
+
+echo "SIM TYPE:$sim_name"
+
+sim_id="${sim_name}_1P_p${run_1p_param}_${run_1p_num}"
+
+echo ${sim_id}
+echo $SLURM_ARRAY_TASK_ID
+
+if [ $(($SLURM_ARRAY_TASK_ID)) -lt 10 ]
+then
+	cp /orange/narayanan/d.zimmerman/camels_results/catalogs_loaded/${sim_id}/caesar_newsnaps_00${SLURM_ARRAY_TASK_ID}.hdf5 /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/${sim_id}/caesar_${SLURM_ARRAY_TASK_ID}.hdf5
+elif [ $(($SLURM_ARRAY_TASK_ID)) -lt 100 ]
+then
+	cp /orange/narayanan/d.zimmerman/camels_results/catalogs_loaded/${sim_id}/caesar_newsnaps_0${SLURM_ARRAY_TASK_ID}.hdf5 /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/${sim_id}/caesar_${SLURM_ARRAY_TASK_ID}.hdf5
+else
+        cp /orange/narayanan/d.zimmerman/camels_results/catalogs_loaded/${sim_id}/caesar_newsnaps_${SLURM_ARRAY_TASK_ID}.hdf5 /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/${sim_id}/caesar_${SLURM_ARRAY_TASK_ID}.hdf5
+fi
+
+
+python /orange/narayanan/d.zimmerman/camels_scripts/filter_simba_camels_setup.py $sim_name $run_1p_param $run_1p_num $SLURM_ARRAY_TASK_ID -1
+python /orange/narayanan/d.zimmerman/camels_scripts/galaxy_positions.py ${sim_id} ${SLURM_ARRAY_TASK_ID}
+python /orange/narayanan/d.zimmerman/camels_scripts/caesar_good_gal_script.py ${sim_id} ${SLURM_ARRAY_TASK_ID}
+python /orange/narayanan/d.zimmerman/camels_scripts/powderday_setup.py ${sim_id} ${SLURM_ARRAY_TASK_ID}
+
+if [ "${sim_name}" = "SIMBA" ]
+then
+	cp /orange/narayanan/d.zimmerman/camels_scripts/parameters_master_camels_simba.py /orange/narayanan/d.zimmerman/camels_results/pd_scripts/${sim_id}/snap${SLURM_ARRAY_TASK_ID}/parameters_master_camels.py
+else
+	cp /orange/narayanan/d.zimmerman/camels_scripts/parameters_master_camels_illustris.py /orange/narayanan/d.zimmerman/camels_results/pd_scripts/${sim_id}/snap${SLURM_ARRAY_TASK_ID}/parameters_master_camels.py
+fi

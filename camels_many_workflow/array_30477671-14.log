@@ -1,0 +1,87 @@
+Tue Apr 30 18:35:48 EDT 2024
+c0706a-s24.ufhpc
+/orange/narayanan/d.zimmerman/camels_scripts/camels_many_workflow
+SIM TYPE:IllustrisTNG
+IllustrisTNG_1P_p6_n2
+14
+yt : [INFO     ] 2024-04-30 18:36:35,178 Opening /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/IllustrisTNG_1P_p6_n2/caesar_14.hdf5
+yt : [INFO     ] 2024-04-30 18:36:36,052 Found 2690 halos
+yt : [INFO     ] 2024-04-30 18:36:36,076 Found 3 galaxies
+
+GALAXY NUM: 0
+star count: 80
+gas count: 167
+
+starting with gas attributes now
+  0%|          | 0/26 [00:00<?, ?it/s]  4%|▍         | 1/26 [00:04<01:41,  4.04s/it]  8%|▊         | 2/26 [00:06<01:15,  3.16s/it] 12%|█▏        | 3/26 [00:07<00:45,  1.96s/it] 15%|█▌        | 4/26 [00:07<00:31,  1.41s/it] 19%|█▉        | 5/26 [00:08<00:23,  1.10s/it] 23%|██▎       | 6/26 [00:08<00:15,  1.29it/s] 27%|██▋       | 7/26 [00:08<00:13,  1.42it/s] 31%|███       | 8/26 [00:09<00:10,  1.80it/s] 35%|███▍      | 9/26 [00:12<00:22,  1.32s/it] 38%|███▊      | 10/26 [00:14<00:25,  1.58s/it] 42%|████▏     | 11/26 [00:15<00:19,  1.31s/it] 46%|████▌     | 12/26 [00:15<00:15,  1.07s/it] 50%|█████     | 13/26 [00:16<00:11,  1.09it/s] 54%|█████▍    | 14/26 [00:16<00:10,  1.13it/s] 58%|█████▊    | 15/26 [00:31<00:56,  5.14s/it] 62%|██████▏   | 16/26 [00:34<00:43,  4.32s/it] 65%|██████▌   | 17/26 [00:35<00:30,  3.38s/it] 69%|██████▉   | 18/26 [00:36<00:20,  2.58s/it] 73%|███████▎  | 19/26 [00:36<00:13,  1.90s/it] 77%|███████▋  | 20/26 [00:37<00:08,  1.48s/it] 81%|████████  | 21/26 [00:37<00:05,  1.08s/it] 85%|████████▍ | 22/26 [00:37<00:03,  1.11it/s] 88%|████████▊ | 23/26 [00:38<00:02,  1.28it/s] 92%|█████████▏| 24/26 [00:39<00:01,  1.25it/s] 96%|█████████▌| 25/26 [00:39<00:00,  1.36it/s]100%|██████████| 26/26 [00:41<00:00,  1.04s/it]100%|██████████| 26/26 [00:41<00:00,  1.59s/it]
+moving to star attributes now
+  0%|          | 0/17 [00:00<?, ?it/s]100%|██████████| 17/17 [00:00<00:00, 206.25it/s]
+done copying attributes, going to edit header now
+
+GALAXY NUM: 1
+star count: 67
+gas count: 129
+
+starting with gas attributes now
+  0%|          | 0/26 [00:00<?, ?it/s]  4%|▍         | 1/26 [00:01<00:31,  1.27s/it]  8%|▊         | 2/26 [00:02<00:30,  1.26s/it] 12%|█▏        | 3/26 [00:02<00:18,  1.27it/s] 15%|█▌        | 4/26 [00:02<00:12,  1.75it/s] 19%|█▉        | 5/26 [00:03<00:09,  2.19it/s] 23%|██▎       | 6/26 [00:03<00:08,  2.25it/s] 27%|██▋       | 7/26 [00:03<00:07,  2.66it/s] 31%|███       | 8/26 [00:04<00:05,  3.27it/s] 35%|███▍      | 9/26 [00:08<00:14,  1.14it/s] 38%|███▊      | 10/26 [00:13<00:37,  2.35s/it] 42%|████▏     | 11/26 [00:13<00:25,  1.72s/it] 46%|████▌     | 12/26 [00:13<00:17,  1.26s/it] 50%|█████     | 13/26 [00:13<00:12,  1.05it/s] 54%|█████▍    | 14/26 [00:14<00:08,  1.36it/s] 58%|█████▊    | 15/26 [00:15<00:08,  1.25it/s] 62%|██████▏   | 16/26 [00:15<00:06,  1.59it/s] 65%|██████▌   | 17/26 [00:15<00:04,  1.97it/s] 69%|██████▉   | 18/26 [00:15<00:03,  2.20it/s] 73%|███████▎  | 19/26 [00:16<00:02,  2.67it/s] 77%|███████▋  | 20/26 [00:16<00:01,  3.06it/s] 81%|████████  | 21/26 [00:16<00:01,  3.80it/s] 85%|████████▍ | 22/26 [00:16<00:01,  3.98it/s] 88%|████████▊ | 23/26 [00:16<00:00,  4.13it/s] 92%|█████████▏| 24/26 [00:17<00:00,  3.39it/s] 96%|█████████▌| 25/26 [00:17<00:00,  3.70it/s]100%|██████████| 26/26 [00:18<00:00,  2.18it/s]100%|██████████| 26/26 [00:20<00:00,  1.24it/s]
+moving to star attributes now
+  0%|          | 0/17 [00:00<?, ?it/s]100%|██████████| 17/17 [00:00<00:00, 420.35it/s]
+done copying attributes, going to edit header now
+
+GALAXY NUM: 2
+star count: 49
+gas count: 147
+
+starting with gas attributes now
+  0%|          | 0/26 [00:00<?, ?it/s]  4%|▍         | 1/26 [00:00<00:24,  1.00it/s]  8%|▊         | 2/26 [00:02<00:26,  1.10s/it] 12%|█▏        | 3/26 [00:02<00:16,  1.43it/s] 15%|█▌        | 4/26 [00:02<00:11,  1.88it/s] 19%|█▉        | 5/26 [00:02<00:09,  2.26it/s] 23%|██▎       | 6/26 [00:03<00:06,  3.02it/s] 27%|██▋       | 7/26 [00:03<00:05,  3.34it/s] 31%|███       | 8/26 [00:03<00:04,  3.95it/s] 35%|███▍      | 9/26 [00:05<00:14,  1.17it/s] 38%|███▊      | 10/26 [00:06<00:16,  1.01s/it] 42%|████▏     | 11/26 [00:07<00:11,  1.31it/s] 46%|████▌     | 12/26 [00:07<00:08,  1.68it/s] 50%|█████     | 13/26 [00:07<00:06,  2.07it/s] 54%|█████▍    | 14/26 [00:16<00:37,  3.11s/it] 58%|█████▊    | 15/26 [00:34<01:21,  7.40s/it] 62%|██████▏   | 16/26 [00:34<00:53,  5.33s/it] 65%|██████▌   | 17/26 [00:34<00:34,  3.80s/it] 69%|██████▉   | 18/26 [00:35<00:21,  2.72s/it] 73%|███████▎  | 19/26 [00:35<00:13,  1.98s/it] 77%|███████▋  | 20/26 [00:35<00:08,  1.48s/it] 81%|████████  | 21/26 [00:35<00:05,  1.07s/it] 85%|████████▍ | 22/26 [00:36<00:03,  1.23it/s] 88%|████████▊ | 23/26 [00:36<00:01,  1.57it/s] 92%|█████████▏| 24/26 [00:36<00:01,  1.76it/s] 96%|█████████▌| 25/26 [00:36<00:00,  2.16it/s]100%|██████████| 26/26 [00:37<00:00,  1.60it/s]100%|██████████| 26/26 [00:38<00:00,  1.47s/it]
+moving to star attributes now
+  0%|          | 0/17 [00:00<?, ?it/s]100%|██████████| 17/17 [00:00<00:00, 240.28it/s]
+done copying attributes, going to edit header now
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 105.53it/s]
+SAVING
+yt : [INFO     ] 2024-04-30 18:39:20,950 Opening /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/IllustrisTNG_1P_p6_n2/caesar_14.hdf5
+yt : [INFO     ] 2024-04-30 18:39:21,071 Found 2690 halos
+yt : [INFO     ] 2024-04-30 18:39:21,081 Found 3 galaxies
+yt : [INFO     ] 2024-04-30 18:40:11,608 Opening /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/IllustrisTNG_1P_p6_n2/caesar_14.hdf5
+yt : [INFO     ] 2024-04-30 18:40:11,840 Found 2690 halos
+yt : [INFO     ] 2024-04-30 18:40:11,849 Found 3 galaxies
+processing model file for galaxy,snapshot:  0,14
+setting up the output directory in case it doesnt already exist
+snap is: 14
+model dir is: /orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap14/
+setting up the PD run output directory in case it doesnt already exist
+snap is: 14
+output dir is: /orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap14/
+writing to /orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap14/snap14_galaxy0.py
+writing slurm submission master script file
+/orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap14/master.snap14.job
+date
+processing model file for galaxy,snapshot:  1,14
+setting up the output directory in case it doesnt already exist
+snap is: 14
+model dir is: /orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap14/
+mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap14/’: File exists
+setting up the PD run output directory in case it doesnt already exist
+snap is: 14
+output dir is: /orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap14/
+mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap14/’: File exists
+mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap14/outlogs’: File exists
+writing to /orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap14/snap14_galaxy1.py
+writing slurm submission master script file
+/orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap14/master.snap14.job
+date
+processing model file for galaxy,snapshot:  2,14
+setting up the output directory in case it doesnt already exist
+snap is: 14
+model dir is: /orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap14/
+mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap14/’: File exists
+setting up the PD run output directory in case it doesnt already exist
+snap is: 14
+output dir is: /orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap14/
+mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap14/’: File exists
+mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap14/outlogs’: File exists
+writing to /orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap14/snap14_galaxy2.py
+writing slurm submission master script file
+/orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap14/master.snap14.job
+date
+{'snap14': 3}

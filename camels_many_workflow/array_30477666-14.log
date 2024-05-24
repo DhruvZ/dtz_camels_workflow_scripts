@@ -1,0 +1,18 @@
+Tue Apr 30 18:35:47 EDT 2024
+c0706a-s2.ufhpc
+/orange/narayanan/d.zimmerman/camels_scripts/camels_many_workflow
+SIM TYPE:IllustrisTNG
+IllustrisTNG_1P_p3_2
+14
+yt : [INFO     ] 2024-04-30 18:36:45,296 Opening /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/IllustrisTNG_1P_p3_2/caesar_14.hdf5
+yt : [INFO     ] 2024-04-30 18:36:46,160 Found 2719 halos
+0it [00:00, ?it/s]0it [00:00, ?it/s]
+SAVING
+yt : [INFO     ] 2024-04-30 18:38:23,304 Opening /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/IllustrisTNG_1P_p3_2/caesar_14.hdf5
+yt : [INFO     ] 2024-04-30 18:38:23,366 Found 2719 halos
+yt : [INFO     ] 2024-04-30 18:39:03,870 Opening /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/IllustrisTNG_1P_p3_2/caesar_14.hdf5
+yt : [INFO     ] 2024-04-30 18:39:05,583 Found 2719 halos
+/orange/narayanan/d.zimmerman/camels_scripts/powderday_setup.py:54: UserWarning: loadtxt: input contained no data: "/orange/narayanan/d.zimmerman/camels_results/filtered/IllustrisTNG_1P_p3_2/snap14/snap14_gas_gals.txt"
+  g_gal_count = len(np.loadtxt(f'/orange/narayanan/d.zimmerman/camels_results/filtered/{sim_id}/snap{snap_num}/snap{snap_num}_gas_gals.txt'))
+{'snap14': 0}
+cp: cannot create regular file '/orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p3_2/snap14/parameters_master_camels.py': No such file or directory

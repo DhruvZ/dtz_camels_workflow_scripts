@@ -1,0 +1,517 @@
+Thu Feb 15 17:11:13 EST 2024
+c0711a-s6.ufhpc
+/orange/narayanan/d.zimmerman/camels_scripts
+yt : [INFO     ] 2024-02-15 17:12:53,176 Calculating time from 1.000e+00 to be 4.433e+17 seconds
+yt : [INFO     ] 2024-02-15 17:12:53,176 Assuming length units are in kpc/h (comoving)
+yt : [INFO     ] 2024-02-15 17:12:53,225 Parameters: current_time              = 4.432875106722329e+17 s
+yt : [INFO     ] 2024-02-15 17:12:53,225 Parameters: domain_dimensions         = [1 1 1]
+yt : [INFO     ] 2024-02-15 17:12:53,225 Parameters: domain_left_edge          = [0. 0. 0.]
+yt : [INFO     ] 2024-02-15 17:12:53,225 Parameters: domain_right_edge         = [25000. 25000. 25000.]
+yt : [INFO     ] 2024-02-15 17:12:53,226 Parameters: cosmological_simulation   = 1
+yt : [INFO     ] 2024-02-15 17:12:53,226 Parameters: current_redshift          = 2.220446049250313e-16
+yt : [INFO     ] 2024-02-15 17:12:53,226 Parameters: omega_lambda              = 0.7
+yt : [INFO     ] 2024-02-15 17:12:53,226 Parameters: omega_matter              = 0.3
+yt : [INFO     ] 2024-02-15 17:12:53,226 Parameters: omega_radiation           = 0.0
+yt : [INFO     ] 2024-02-15 17:12:53,226 Parameters: hubble_constant           = 0.6711
+yt : [INFO     ] 2024-02-15 17:12:53,238 Allocating for 2.11e+04 particles
+yt : [INFO     ] 2024-02-15 17:12:54,193 Allocating octree with spatial range [6.4627e+03, 1.0255e+04, 2.7837e+03] code_length to [6.5969e+03, 1.0390e+04, 2.9179e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:54,196 Allocating Octree for 21095 particles
+yt : [INFO     ] 2024-02-15 17:12:54,217 Allocated 83273 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:54,217 Octree bound 21095 particles
+{'snap33': 1080}
+
+
+gal: 0
+
+[ 6529.8325 10322.455   2850.7793]
+[octree zoom_bbox_filter:] using center:  [6529.8325, 10322.455, 2850.7793]
+
+[octree zoom] new zoomed bbox (comoving/h) in code units=  [[6462.72251953125, 6596.94251953125], [10255.345078125, 10389.565078125], [2783.669296875, 2917.889296875]]
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 207.89it/s]
+yt : [INFO     ] 2024-02-15 17:12:54,362 Allocating octree with spatial range [6.4627e+03, 1.0255e+04, 2.7837e+03] code_length to [6.5969e+03, 1.0390e+04, 2.9179e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:54,364 Allocating Octree for 21095 particles
+yt : [INFO     ] 2024-02-15 17:12:54,375 Allocated 42033 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:54,375 Octree bound 21095 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 252.29it/s]
+yt : [INFO     ] 2024-02-15 17:12:54,424 Allocating octree with spatial range [6.4627e+03, 1.0255e+04, 2.7837e+03] code_length to [6.5969e+03, 1.0390e+04, 2.9179e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:54,426 Allocating Octree for 21095 particles
+yt : [INFO     ] 2024-02-15 17:12:54,431 Allocated 20473 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:54,431 Octree bound 21095 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 233.98it/s]
+yt : [INFO     ] 2024-02-15 17:12:54,458 Allocating octree with spatial range [6.4627e+03, 1.0255e+04, 2.7837e+03] code_length to [6.5969e+03, 1.0390e+04, 2.9179e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:54,460 Allocating Octree for 21095 particles
+yt : [INFO     ] 2024-02-15 17:12:54,463 Allocated 10713 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:54,463 Octree bound 21095 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 247.52it/s]
+yt : [INFO     ] 2024-02-15 17:12:54,479 Allocating octree with spatial range [6.4627e+03, 1.0255e+04, 2.7837e+03] code_length to [6.5969e+03, 1.0390e+04, 2.9179e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:54,481 Allocating Octree for 21095 particles
+yt : [INFO     ] 2024-02-15 17:12:54,483 Allocated 5433 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:54,483 Octree bound 21095 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 250.36it/s]
+yt : [INFO     ] 2024-02-15 17:12:54,494 Allocating octree with spatial range [6.4627e+03, 1.0255e+04, 2.7837e+03] code_length to [6.5969e+03, 1.0390e+04, 2.9179e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:54,496 Allocating Octree for 21095 particles
+yt : [INFO     ] 2024-02-15 17:12:54,497 Allocated 2777 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:54,497 Octree bound 21095 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 250.08it/s]
+yt : [INFO     ] 2024-02-15 17:12:54,574 Calculating time from 1.000e+00 to be 4.433e+17 seconds
+yt : [INFO     ] 2024-02-15 17:12:54,574 Assuming length units are in kpc/h (comoving)
+yt : [INFO     ] 2024-02-15 17:12:54,612 Parameters: current_time              = 4.432875106722329e+17 s
+yt : [INFO     ] 2024-02-15 17:12:54,612 Parameters: domain_dimensions         = [1 1 1]
+yt : [INFO     ] 2024-02-15 17:12:54,613 Parameters: domain_left_edge          = [0. 0. 0.]
+yt : [INFO     ] 2024-02-15 17:12:54,613 Parameters: domain_right_edge         = [25000. 25000. 25000.]
+yt : [INFO     ] 2024-02-15 17:12:54,613 Parameters: cosmological_simulation   = 1
+yt : [INFO     ] 2024-02-15 17:12:54,613 Parameters: current_redshift          = 2.220446049250313e-16
+yt : [INFO     ] 2024-02-15 17:12:54,613 Parameters: omega_lambda              = 0.7
+yt : [INFO     ] 2024-02-15 17:12:54,613 Parameters: omega_matter              = 0.3
+yt : [INFO     ] 2024-02-15 17:12:54,613 Parameters: omega_radiation           = 0.0
+yt : [INFO     ] 2024-02-15 17:12:54,613 Parameters: hubble_constant           = 0.6711
+yt : [INFO     ] 2024-02-15 17:12:54,622 Allocating for 1.255e+04 particles
+yt : [INFO     ] 2024-02-15 17:12:55,026 Allocating octree with spatial range [1.4951e+04, 9.7694e+03, 5.5500e+03] code_length to [1.5085e+04, 9.9037e+03, 5.6843e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:55,029 Allocating Octree for 12547 particles
+yt : [INFO     ] 2024-02-15 17:12:55,039 Allocated 49449 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:55,039 Octree bound 12547 particles
+
+
+gal: 1
+
+[15017.919   9836.544   5617.1406]
+[octree zoom_bbox_filter:] using center:  [15017.919, 9836.544, 5617.1406]
+
+[octree zoom] new zoomed bbox (comoving/h) in code units=  [[14950.8089453125, 15085.0289453125], [9769.4339453125, 9903.6539453125], [5550.030625, 5684.250625]]
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 63.96it/s]
+yt : [INFO     ] 2024-02-15 17:12:55,108 Allocating octree with spatial range [1.4951e+04, 9.7694e+03, 5.5500e+03] code_length to [1.5085e+04, 9.9037e+03, 5.6843e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:55,111 Allocating Octree for 12547 particles
+yt : [INFO     ] 2024-02-15 17:12:55,116 Allocated 24673 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:55,116 Octree bound 12547 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 83.16it/s]
+yt : [INFO     ] 2024-02-15 17:12:55,155 Allocating octree with spatial range [1.4951e+04, 9.7694e+03, 5.5500e+03] code_length to [1.5085e+04, 9.9037e+03, 5.6843e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:55,157 Allocating Octree for 12547 particles
+yt : [INFO     ] 2024-02-15 17:12:55,160 Allocated 12433 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:55,160 Octree bound 12547 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 92.31it/s]
+yt : [INFO     ] 2024-02-15 17:12:55,185 Allocating octree with spatial range [1.4951e+04, 9.7694e+03, 5.5500e+03] code_length to [1.5085e+04, 9.9037e+03, 5.6843e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:55,187 Allocating Octree for 12547 particles
+yt : [INFO     ] 2024-02-15 17:12:55,189 Allocated 6521 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:55,189 Octree bound 12547 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 97.97it/s]
+yt : [INFO     ] 2024-02-15 17:12:55,207 Allocating octree with spatial range [1.4951e+04, 9.7694e+03, 5.5500e+03] code_length to [1.5085e+04, 9.9037e+03, 5.6843e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:55,209 Allocating Octree for 12547 particles
+yt : [INFO     ] 2024-02-15 17:12:55,210 Allocated 3209 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:55,210 Octree bound 12547 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 105.59it/s]
+yt : [INFO     ] 2024-02-15 17:12:55,224 Allocating octree with spatial range [1.4951e+04, 9.7694e+03, 5.5500e+03] code_length to [1.5085e+04, 9.9037e+03, 5.6843e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:55,226 Allocating Octree for 12547 particles
+yt : [INFO     ] 2024-02-15 17:12:55,227 Allocated 1665 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:55,227 Octree bound 12547 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 106.94it/s]
+yt : [INFO     ] 2024-02-15 17:12:55,337 Calculating time from 1.000e+00 to be 4.433e+17 seconds
+yt : [INFO     ] 2024-02-15 17:12:55,337 Assuming length units are in kpc/h (comoving)
+yt : [INFO     ] 2024-02-15 17:12:55,371 Parameters: current_time              = 4.432875106722329e+17 s
+yt : [INFO     ] 2024-02-15 17:12:55,371 Parameters: domain_dimensions         = [1 1 1]
+yt : [INFO     ] 2024-02-15 17:12:55,371 Parameters: domain_left_edge          = [0. 0. 0.]
+yt : [INFO     ] 2024-02-15 17:12:55,371 Parameters: domain_right_edge         = [25000. 25000. 25000.]
+yt : [INFO     ] 2024-02-15 17:12:55,371 Parameters: cosmological_simulation   = 1
+yt : [INFO     ] 2024-02-15 17:12:55,371 Parameters: current_redshift          = 2.220446049250313e-16
+yt : [INFO     ] 2024-02-15 17:12:55,371 Parameters: omega_lambda              = 0.7
+yt : [INFO     ] 2024-02-15 17:12:55,371 Parameters: omega_matter              = 0.3
+yt : [INFO     ] 2024-02-15 17:12:55,371 Parameters: omega_radiation           = 0.0
+yt : [INFO     ] 2024-02-15 17:12:55,371 Parameters: hubble_constant           = 0.6711
+yt : [INFO     ] 2024-02-15 17:12:55,381 Allocating for 1.183e+04 particles
+yt : [INFO     ] 2024-02-15 17:12:55,739 Allocating octree with spatial range [1.3142e+04, 2.2033e+04, 3.0478e+03] code_length to [1.3276e+04, 2.2167e+04, 3.1820e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:55,741 Allocating Octree for 11826 particles
+yt : [INFO     ] 2024-02-15 17:12:55,752 Allocated 47097 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:55,752 Octree bound 11826 particles
+
+
+gal: 2
+
+[13208.636  22099.947   3114.8857]
+[octree zoom_bbox_filter:] using center:  [13208.636, 22099.947, 3114.8857]
+
+[octree zoom] new zoomed bbox (comoving/h) in code units=  [[13141.5257421875, 13275.7457421875], [22032.837265625, 22167.057265625], [3047.7757421875, 3181.9957421875]]
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 213.24it/s]
+yt : [INFO     ] 2024-02-15 17:12:55,809 Allocating octree with spatial range [1.3142e+04, 2.2033e+04, 3.0478e+03] code_length to [1.3276e+04, 2.2167e+04, 3.1820e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:55,810 Allocating Octree for 11826 particles
+yt : [INFO     ] 2024-02-15 17:12:55,816 Allocated 23273 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:55,816 Octree bound 11826 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 248.49it/s]
+yt : [INFO     ] 2024-02-15 17:12:55,846 Allocating octree with spatial range [1.3142e+04, 2.2033e+04, 3.0478e+03] code_length to [1.3276e+04, 2.2167e+04, 3.1820e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:55,847 Allocating Octree for 11826 particles
+yt : [INFO     ] 2024-02-15 17:12:55,851 Allocated 11785 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:55,851 Octree bound 11826 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 242.04it/s]
+yt : [INFO     ] 2024-02-15 17:12:55,868 Allocating octree with spatial range [1.3142e+04, 2.2033e+04, 3.0478e+03] code_length to [1.3276e+04, 2.2167e+04, 3.1820e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:55,869 Allocating Octree for 11826 particles
+yt : [INFO     ] 2024-02-15 17:12:55,871 Allocated 6185 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:55,871 Octree bound 11826 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 238.64it/s]
+yt : [INFO     ] 2024-02-15 17:12:55,882 Allocating octree with spatial range [1.3142e+04, 2.2033e+04, 3.0478e+03] code_length to [1.3276e+04, 2.2167e+04, 3.1820e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:55,884 Allocating Octree for 11826 particles
+yt : [INFO     ] 2024-02-15 17:12:55,885 Allocated 3057 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:55,885 Octree bound 11826 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 222.32it/s]
+yt : [INFO     ] 2024-02-15 17:12:55,893 Allocating octree with spatial range [1.3142e+04, 2.2033e+04, 3.0478e+03] code_length to [1.3276e+04, 2.2167e+04, 3.1820e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:55,895 Allocating Octree for 11826 particles
+yt : [INFO     ] 2024-02-15 17:12:55,896 Allocated 1593 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:55,896 Octree bound 11826 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 246.27it/s]
+yt : [INFO     ] 2024-02-15 17:12:55,971 Calculating time from 1.000e+00 to be 4.433e+17 seconds
+yt : [INFO     ] 2024-02-15 17:12:55,971 Assuming length units are in kpc/h (comoving)
+yt : [INFO     ] 2024-02-15 17:12:56,001 Parameters: current_time              = 4.432875106722329e+17 s
+yt : [INFO     ] 2024-02-15 17:12:56,001 Parameters: domain_dimensions         = [1 1 1]
+yt : [INFO     ] 2024-02-15 17:12:56,001 Parameters: domain_left_edge          = [0. 0. 0.]
+yt : [INFO     ] 2024-02-15 17:12:56,001 Parameters: domain_right_edge         = [25000. 25000. 25000.]
+yt : [INFO     ] 2024-02-15 17:12:56,001 Parameters: cosmological_simulation   = 1
+yt : [INFO     ] 2024-02-15 17:12:56,001 Parameters: current_redshift          = 2.220446049250313e-16
+yt : [INFO     ] 2024-02-15 17:12:56,001 Parameters: omega_lambda              = 0.7
+yt : [INFO     ] 2024-02-15 17:12:56,001 Parameters: omega_matter              = 0.3
+yt : [INFO     ] 2024-02-15 17:12:56,001 Parameters: omega_radiation           = 0.0
+yt : [INFO     ] 2024-02-15 17:12:56,001 Parameters: hubble_constant           = 0.6711
+yt : [INFO     ] 2024-02-15 17:12:56,011 Allocating for 1.1e+04 particles
+yt : [INFO     ] 2024-02-15 17:12:56,417 Allocating octree with spatial range [1.2559e+04, 2.3117e+04, 9.4719e+03] code_length to [1.2694e+04, 2.3251e+04, 9.6061e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:56,420 Allocating Octree for 11003 particles
+yt : [INFO     ] 2024-02-15 17:12:56,429 Allocated 43857 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:56,429 Octree bound 11003 particles
+
+
+gal: 3
+
+[12626.507 23184.02   9539.019]
+[octree zoom_bbox_filter:] using center:  [12626.507, 23184.02, 9539.019]
+
+[octree zoom] new zoomed bbox (comoving/h) in code units=  [[12559.3968359375, 12693.6168359375], [23116.90953125, 23251.12953125], [9471.9085546875, 9606.1285546875]]
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00,  3.75it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00,  3.75it/s]
+yt : [INFO     ] 2024-02-15 17:12:56,744 Allocating octree with spatial range [1.2559e+04, 2.3117e+04, 9.4719e+03] code_length to [1.2694e+04, 2.3251e+04, 9.6061e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:56,746 Allocating Octree for 11003 particles
+yt : [INFO     ] 2024-02-15 17:12:56,751 Allocated 21929 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:56,751 Octree bound 11003 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00,  6.11it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00,  6.11it/s]
+yt : [INFO     ] 2024-02-15 17:12:56,938 Allocating octree with spatial range [1.2559e+04, 2.3117e+04, 9.4719e+03] code_length to [1.2694e+04, 2.3251e+04, 9.6061e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:56,941 Allocating Octree for 11003 particles
+yt : [INFO     ] 2024-02-15 17:12:56,944 Allocated 11257 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:56,944 Octree bound 11003 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 10.65it/s]
+yt : [INFO     ] 2024-02-15 17:12:57,050 Allocating octree with spatial range [1.2559e+04, 2.3117e+04, 9.4719e+03] code_length to [1.2694e+04, 2.3251e+04, 9.6061e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:57,053 Allocating Octree for 11003 particles
+yt : [INFO     ] 2024-02-15 17:12:57,054 Allocated 5905 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:57,054 Octree bound 11003 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 17.31it/s]
+yt : [INFO     ] 2024-02-15 17:12:57,119 Allocating octree with spatial range [1.2559e+04, 2.3117e+04, 9.4719e+03] code_length to [1.2694e+04, 2.3251e+04, 9.6061e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:57,121 Allocating Octree for 11003 particles
+yt : [INFO     ] 2024-02-15 17:12:57,122 Allocated 2969 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:57,122 Octree bound 11003 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 28.15it/s]
+yt : [INFO     ] 2024-02-15 17:12:57,162 Allocating octree with spatial range [1.2559e+04, 2.3117e+04, 9.4719e+03] code_length to [1.2694e+04, 2.3251e+04, 9.6061e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:57,164 Allocating Octree for 11003 particles
+yt : [INFO     ] 2024-02-15 17:12:57,165 Allocated 1585 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:57,165 Octree bound 11003 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 41.40it/s]
+yt : [INFO     ] 2024-02-15 17:12:57,276 Calculating time from 1.000e+00 to be 4.433e+17 seconds
+yt : [INFO     ] 2024-02-15 17:12:57,276 Assuming length units are in kpc/h (comoving)
+yt : [INFO     ] 2024-02-15 17:12:57,305 Parameters: current_time              = 4.432875106722329e+17 s
+yt : [INFO     ] 2024-02-15 17:12:57,305 Parameters: domain_dimensions         = [1 1 1]
+yt : [INFO     ] 2024-02-15 17:12:57,305 Parameters: domain_left_edge          = [0. 0. 0.]
+yt : [INFO     ] 2024-02-15 17:12:57,305 Parameters: domain_right_edge         = [25000. 25000. 25000.]
+yt : [INFO     ] 2024-02-15 17:12:57,305 Parameters: cosmological_simulation   = 1
+yt : [INFO     ] 2024-02-15 17:12:57,305 Parameters: current_redshift          = 2.220446049250313e-16
+yt : [INFO     ] 2024-02-15 17:12:57,305 Parameters: omega_lambda              = 0.7
+yt : [INFO     ] 2024-02-15 17:12:57,305 Parameters: omega_matter              = 0.3
+yt : [INFO     ] 2024-02-15 17:12:57,305 Parameters: omega_radiation           = 0.0
+yt : [INFO     ] 2024-02-15 17:12:57,305 Parameters: hubble_constant           = 0.6711
+yt : [INFO     ] 2024-02-15 17:12:57,315 Allocating for 1.014e+04 particles
+yt : [INFO     ] 2024-02-15 17:12:57,722 Allocating octree with spatial range [1.1275e+04, 1.3582e+04, 1.6036e+04] code_length to [1.1410e+04, 1.3717e+04, 1.6171e+04] code_length
+yt : [INFO     ] 2024-02-15 17:12:57,725 Allocating Octree for 10144 particles
+yt : [INFO     ] 2024-02-15 17:12:57,733 Allocated 39961 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:57,733 Octree bound 10144 particles
+
+
+gal: 4
+
+[11342.5625 13649.582  16103.493 ]
+[octree zoom_bbox_filter:] using center:  [11342.5625, 13649.582, 16103.493]
+
+[octree zoom] new zoomed bbox (comoving/h) in code units=  [[11275.4525, 11409.6725], [13582.47203125, 13716.69203125], [16036.3831640625, 16170.6031640625]]
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00,  4.42it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00,  4.42it/s]
+yt : [INFO     ] 2024-02-15 17:12:58,003 Allocating octree with spatial range [1.1275e+04, 1.3582e+04, 1.6036e+04] code_length to [1.1410e+04, 1.3717e+04, 1.6171e+04] code_length
+yt : [INFO     ] 2024-02-15 17:12:58,006 Allocating Octree for 10144 particles
+yt : [INFO     ] 2024-02-15 17:12:58,011 Allocated 20425 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:58,011 Octree bound 10144 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00,  7.33it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00,  7.33it/s]
+yt : [INFO     ] 2024-02-15 17:12:58,169 Allocating octree with spatial range [1.1275e+04, 1.3582e+04, 1.6036e+04] code_length to [1.1410e+04, 1.3717e+04, 1.6171e+04] code_length
+yt : [INFO     ] 2024-02-15 17:12:58,172 Allocating Octree for 10144 particles
+yt : [INFO     ] 2024-02-15 17:12:58,174 Allocated 10017 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:58,174 Octree bound 10144 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 13.32it/s]
+yt : [INFO     ] 2024-02-15 17:12:58,261 Allocating octree with spatial range [1.1275e+04, 1.3582e+04, 1.6036e+04] code_length to [1.1410e+04, 1.3717e+04, 1.6171e+04] code_length
+yt : [INFO     ] 2024-02-15 17:12:58,264 Allocating Octree for 10144 particles
+yt : [INFO     ] 2024-02-15 17:12:58,265 Allocated 5345 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:58,265 Octree bound 10144 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 20.38it/s]
+yt : [INFO     ] 2024-02-15 17:12:58,321 Allocating octree with spatial range [1.1275e+04, 1.3582e+04, 1.6036e+04] code_length to [1.1410e+04, 1.3717e+04, 1.6171e+04] code_length
+yt : [INFO     ] 2024-02-15 17:12:58,323 Allocating Octree for 10144 particles
+yt : [INFO     ] 2024-02-15 17:12:58,324 Allocated 2729 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:58,324 Octree bound 10144 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 35.33it/s]
+yt : [INFO     ] 2024-02-15 17:12:58,356 Allocating octree with spatial range [1.1275e+04, 1.3582e+04, 1.6036e+04] code_length to [1.1410e+04, 1.3717e+04, 1.6171e+04] code_length
+yt : [INFO     ] 2024-02-15 17:12:58,358 Allocating Octree for 10144 particles
+yt : [INFO     ] 2024-02-15 17:12:58,359 Allocated 1361 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:58,359 Octree bound 10144 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 50.23it/s]
+yt : [INFO     ] 2024-02-15 17:12:58,483 Calculating time from 1.000e+00 to be 4.433e+17 seconds
+yt : [INFO     ] 2024-02-15 17:12:58,483 Assuming length units are in kpc/h (comoving)
+yt : [INFO     ] 2024-02-15 17:12:58,512 Parameters: current_time              = 4.432875106722329e+17 s
+yt : [INFO     ] 2024-02-15 17:12:58,512 Parameters: domain_dimensions         = [1 1 1]
+yt : [INFO     ] 2024-02-15 17:12:58,512 Parameters: domain_left_edge          = [0. 0. 0.]
+yt : [INFO     ] 2024-02-15 17:12:58,512 Parameters: domain_right_edge         = [25000. 25000. 25000.]
+yt : [INFO     ] 2024-02-15 17:12:58,512 Parameters: cosmological_simulation   = 1
+yt : [INFO     ] 2024-02-15 17:12:58,512 Parameters: current_redshift          = 2.220446049250313e-16
+yt : [INFO     ] 2024-02-15 17:12:58,512 Parameters: omega_lambda              = 0.7
+yt : [INFO     ] 2024-02-15 17:12:58,512 Parameters: omega_matter              = 0.3
+yt : [INFO     ] 2024-02-15 17:12:58,513 Parameters: omega_radiation           = 0.0
+yt : [INFO     ] 2024-02-15 17:12:58,513 Parameters: hubble_constant           = 0.6711
+yt : [INFO     ] 2024-02-15 17:12:58,522 Allocating for 1.009e+04 particles
+yt : [INFO     ] 2024-02-15 17:12:58,881 Allocating octree with spatial range [1.9841e+04, 6.8857e+03, 2.4720e+03] code_length to [1.9975e+04, 7.0199e+03, 2.6063e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:58,882 Allocating Octree for 10094 particles
+yt : [INFO     ] 2024-02-15 17:12:58,891 Allocated 39233 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:58,891 Octree bound 10094 particles
+
+
+gal: 5
+
+[19907.906   6952.7773  2539.1406]
+[octree zoom_bbox_filter:] using center:  [19907.906, 6952.7773, 2539.1406]
+
+[octree zoom] new zoomed bbox (comoving/h) in code units=  [[19840.79625, 19975.01625], [6885.66734375, 7019.88734375], [2472.030625, 2606.250625]]
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 197.10it/s]
+yt : [INFO     ] 2024-02-15 17:12:58,940 Allocating octree with spatial range [1.9841e+04, 6.8857e+03, 2.4720e+03] code_length to [1.9975e+04, 7.0199e+03, 2.6063e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:58,941 Allocating Octree for 10094 particles
+yt : [INFO     ] 2024-02-15 17:12:58,946 Allocated 19745 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:58,946 Octree bound 10094 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 186.80it/s]
+yt : [INFO     ] 2024-02-15 17:12:58,973 Allocating octree with spatial range [1.9841e+04, 6.8857e+03, 2.4720e+03] code_length to [1.9975e+04, 7.0199e+03, 2.6063e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:58,974 Allocating Octree for 10094 particles
+yt : [INFO     ] 2024-02-15 17:12:58,977 Allocated 9977 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:58,977 Octree bound 10094 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 210.83it/s]
+yt : [INFO     ] 2024-02-15 17:12:58,993 Allocating octree with spatial range [1.9841e+04, 6.8857e+03, 2.4720e+03] code_length to [1.9975e+04, 7.0199e+03, 2.6063e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:58,995 Allocating Octree for 10094 particles
+yt : [INFO     ] 2024-02-15 17:12:58,996 Allocated 5217 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:58,996 Octree bound 10094 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 199.31it/s]
+yt : [INFO     ] 2024-02-15 17:12:59,007 Allocating octree with spatial range [1.9841e+04, 6.8857e+03, 2.4720e+03] code_length to [1.9975e+04, 7.0199e+03, 2.6063e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:59,009 Allocating Octree for 10094 particles
+yt : [INFO     ] 2024-02-15 17:12:59,010 Allocated 2561 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:59,010 Octree bound 10094 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 205.59it/s]
+yt : [INFO     ] 2024-02-15 17:12:59,018 Allocating octree with spatial range [1.9841e+04, 6.8857e+03, 2.4720e+03] code_length to [1.9975e+04, 7.0199e+03, 2.6063e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:59,019 Allocating Octree for 10094 particles
+yt : [INFO     ] 2024-02-15 17:12:59,020 Allocated 1433 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:59,020 Octree bound 10094 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 233.13it/s]
+yt : [INFO     ] 2024-02-15 17:12:59,110 Calculating time from 1.000e+00 to be 4.433e+17 seconds
+yt : [INFO     ] 2024-02-15 17:12:59,110 Assuming length units are in kpc/h (comoving)
+yt : [INFO     ] 2024-02-15 17:12:59,139 Parameters: current_time              = 4.432875106722329e+17 s
+yt : [INFO     ] 2024-02-15 17:12:59,139 Parameters: domain_dimensions         = [1 1 1]
+yt : [INFO     ] 2024-02-15 17:12:59,139 Parameters: domain_left_edge          = [0. 0. 0.]
+yt : [INFO     ] 2024-02-15 17:12:59,139 Parameters: domain_right_edge         = [25000. 25000. 25000.]
+yt : [INFO     ] 2024-02-15 17:12:59,139 Parameters: cosmological_simulation   = 1
+yt : [INFO     ] 2024-02-15 17:12:59,139 Parameters: current_redshift          = 2.220446049250313e-16
+yt : [INFO     ] 2024-02-15 17:12:59,139 Parameters: omega_lambda              = 0.7
+yt : [INFO     ] 2024-02-15 17:12:59,139 Parameters: omega_matter              = 0.3
+yt : [INFO     ] 2024-02-15 17:12:59,139 Parameters: omega_radiation           = 0.0
+yt : [INFO     ] 2024-02-15 17:12:59,139 Parameters: hubble_constant           = 0.6711
+yt : [INFO     ] 2024-02-15 17:12:59,150 Allocating for 9515 particles
+yt : [INFO     ] 2024-02-15 17:12:59,563 Allocating octree with spatial range [1.5031e+04, 9.5826e+03, 4.0453e+03] code_length to [1.5166e+04, 9.7168e+03, 4.1795e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:59,565 Allocating Octree for 9515 particles
+yt : [INFO     ] 2024-02-15 17:12:59,572 Allocated 37145 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:59,572 Octree bound 9515 particles
+
+
+gal: 6
+
+[15098.527  9649.696  4112.37 ]
+[octree zoom_bbox_filter:] using center:  [15098.527, 9649.696, 4112.37]
+
+[octree zoom] new zoomed bbox (comoving/h) in code units=  [[15031.41734375, 15165.63734375], [9582.5862890625, 9716.8062890625], [4045.2601171875, 4179.4801171875]]
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 231.45it/s]
+yt : [INFO     ] 2024-02-15 17:12:59,617 Allocating octree with spatial range [1.5031e+04, 9.5826e+03, 4.0453e+03] code_length to [1.5166e+04, 9.7168e+03, 4.1795e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:59,619 Allocating Octree for 9515 particles
+yt : [INFO     ] 2024-02-15 17:12:59,623 Allocated 18857 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:59,623 Octree bound 9515 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 229.31it/s]
+yt : [INFO     ] 2024-02-15 17:12:59,648 Allocating octree with spatial range [1.5031e+04, 9.5826e+03, 4.0453e+03] code_length to [1.5166e+04, 9.7168e+03, 4.1795e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:59,649 Allocating Octree for 9515 particles
+yt : [INFO     ] 2024-02-15 17:12:59,652 Allocated 9585 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:59,652 Octree bound 9515 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 248.92it/s]
+yt : [INFO     ] 2024-02-15 17:12:59,667 Allocating octree with spatial range [1.5031e+04, 9.5826e+03, 4.0453e+03] code_length to [1.5166e+04, 9.7168e+03, 4.1795e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:59,668 Allocating Octree for 9515 particles
+yt : [INFO     ] 2024-02-15 17:12:59,670 Allocated 4897 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:59,670 Octree bound 9515 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 248.32it/s]
+yt : [INFO     ] 2024-02-15 17:12:59,679 Allocating octree with spatial range [1.5031e+04, 9.5826e+03, 4.0453e+03] code_length to [1.5166e+04, 9.7168e+03, 4.1795e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:59,681 Allocating Octree for 9515 particles
+yt : [INFO     ] 2024-02-15 17:12:59,682 Allocated 2441 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:59,682 Octree bound 9515 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 246.99it/s]
+yt : [INFO     ] 2024-02-15 17:12:59,689 Allocating octree with spatial range [1.5031e+04, 9.5826e+03, 4.0453e+03] code_length to [1.5166e+04, 9.7168e+03, 4.1795e+03] code_length
+yt : [INFO     ] 2024-02-15 17:12:59,690 Allocating Octree for 9515 particles
+yt : [INFO     ] 2024-02-15 17:12:59,691 Allocated 1369 nodes in octree
+yt : [INFO     ] 2024-02-15 17:12:59,691 Octree bound 9515 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 242.05it/s]
+yt : [INFO     ] 2024-02-15 17:12:59,771 Calculating time from 1.000e+00 to be 4.433e+17 seconds
+yt : [INFO     ] 2024-02-15 17:12:59,772 Assuming length units are in kpc/h (comoving)
+yt : [INFO     ] 2024-02-15 17:12:59,801 Parameters: current_time              = 4.432875106722329e+17 s
+yt : [INFO     ] 2024-02-15 17:12:59,801 Parameters: domain_dimensions         = [1 1 1]
+yt : [INFO     ] 2024-02-15 17:12:59,801 Parameters: domain_left_edge          = [0. 0. 0.]
+yt : [INFO     ] 2024-02-15 17:12:59,801 Parameters: domain_right_edge         = [25000. 25000. 25000.]
+yt : [INFO     ] 2024-02-15 17:12:59,801 Parameters: cosmological_simulation   = 1
+yt : [INFO     ] 2024-02-15 17:12:59,801 Parameters: current_redshift          = 2.220446049250313e-16
+yt : [INFO     ] 2024-02-15 17:12:59,801 Parameters: omega_lambda              = 0.7
+yt : [INFO     ] 2024-02-15 17:12:59,801 Parameters: omega_matter              = 0.3
+yt : [INFO     ] 2024-02-15 17:12:59,801 Parameters: omega_radiation           = 0.0
+yt : [INFO     ] 2024-02-15 17:12:59,801 Parameters: hubble_constant           = 0.6711
+yt : [INFO     ] 2024-02-15 17:12:59,811 Allocating for 8365 particles
+yt : [INFO     ] 2024-02-15 17:13:00,216 Allocating octree with spatial range [1.2316e+04, 2.2882e+04, 2.2891e+03] code_length to [1.2451e+04, 2.3016e+04, 2.4234e+03] code_length
+yt : [INFO     ] 2024-02-15 17:13:00,219 Allocating Octree for 8365 particles
+yt : [INFO     ] 2024-02-15 17:13:00,226 Allocated 33409 nodes in octree
+yt : [INFO     ] 2024-02-15 17:13:00,226 Octree bound 8365 particles
+
+
+gal: 7
+
+[12383.396  22948.746   2356.2417]
+[octree zoom_bbox_filter:] using center:  [12383.396, 22948.746, 2356.2417]
+
+[octree zoom] new zoomed bbox (comoving/h) in code units=  [[12316.286484375, 12450.506484375], [22881.63609375, 23015.85609375], [2289.13169921875, 2423.35169921875]]
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00,  7.46it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00,  7.46it/s]
+yt : [INFO     ] 2024-02-15 17:13:00,396 Allocating octree with spatial range [1.2316e+04, 2.2882e+04, 2.2891e+03] code_length to [1.2451e+04, 2.3016e+04, 2.4234e+03] code_length
+yt : [INFO     ] 2024-02-15 17:13:00,399 Allocating Octree for 8365 particles
+yt : [INFO     ] 2024-02-15 17:13:00,402 Allocated 16585 nodes in octree
+yt : [INFO     ] 2024-02-15 17:13:00,402 Octree bound 8365 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 12.75it/s]
+yt : [INFO     ] 2024-02-15 17:13:00,499 Allocating octree with spatial range [1.2316e+04, 2.2882e+04, 2.2891e+03] code_length to [1.2451e+04, 2.3016e+04, 2.4234e+03] code_length
+yt : [INFO     ] 2024-02-15 17:13:00,501 Allocating Octree for 8365 particles
+yt : [INFO     ] 2024-02-15 17:13:00,504 Allocated 8745 nodes in octree
+yt : [INFO     ] 2024-02-15 17:13:00,504 Octree bound 8365 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 20.57it/s]
+yt : [INFO     ] 2024-02-15 17:13:00,562 Allocating octree with spatial range [1.2316e+04, 2.2882e+04, 2.2891e+03] code_length to [1.2451e+04, 2.3016e+04, 2.4234e+03] code_length
+yt : [INFO     ] 2024-02-15 17:13:00,565 Allocating Octree for 8365 particles
+yt : [INFO     ] 2024-02-15 17:13:00,566 Allocated 4305 nodes in octree
+yt : [INFO     ] 2024-02-15 17:13:00,566 Octree bound 8365 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 32.98it/s]
+yt : [INFO     ] 2024-02-15 17:13:00,602 Allocating octree with spatial range [1.2316e+04, 2.2882e+04, 2.2891e+03] code_length to [1.2451e+04, 2.3016e+04, 2.4234e+03] code_length
+yt : [INFO     ] 2024-02-15 17:13:00,604 Allocating Octree for 8365 particles
+yt : [INFO     ] 2024-02-15 17:13:00,605 Allocated 2249 nodes in octree
+yt : [INFO     ] 2024-02-15 17:13:00,605 Octree bound 8365 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 49.91it/s]
+yt : [INFO     ] 2024-02-15 17:13:00,628 Allocating octree with spatial range [1.2316e+04, 2.2882e+04, 2.2891e+03] code_length to [1.2451e+04, 2.3016e+04, 2.4234e+03] code_length
+yt : [INFO     ] 2024-02-15 17:13:00,630 Allocating Octree for 8365 particles
+yt : [INFO     ] 2024-02-15 17:13:00,631 Allocated 1177 nodes in octree
+yt : [INFO     ] 2024-02-15 17:13:00,631 Octree bound 8365 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 66.71it/s]
+yt : [INFO     ] 2024-02-15 17:13:00,721 Calculating time from 1.000e+00 to be 4.433e+17 seconds
+yt : [INFO     ] 2024-02-15 17:13:00,721 Assuming length units are in kpc/h (comoving)
+yt : [INFO     ] 2024-02-15 17:13:00,750 Parameters: current_time              = 4.432875106722329e+17 s
+yt : [INFO     ] 2024-02-15 17:13:00,751 Parameters: domain_dimensions         = [1 1 1]
+yt : [INFO     ] 2024-02-15 17:13:00,751 Parameters: domain_left_edge          = [0. 0. 0.]
+yt : [INFO     ] 2024-02-15 17:13:00,751 Parameters: domain_right_edge         = [25000. 25000. 25000.]
+yt : [INFO     ] 2024-02-15 17:13:00,751 Parameters: cosmological_simulation   = 1
+yt : [INFO     ] 2024-02-15 17:13:00,751 Parameters: current_redshift          = 2.220446049250313e-16
+yt : [INFO     ] 2024-02-15 17:13:00,751 Parameters: omega_lambda              = 0.7
+yt : [INFO     ] 2024-02-15 17:13:00,751 Parameters: omega_matter              = 0.3
+yt : [INFO     ] 2024-02-15 17:13:00,751 Parameters: omega_radiation           = 0.0
+yt : [INFO     ] 2024-02-15 17:13:00,751 Parameters: hubble_constant           = 0.6711
+yt : [INFO     ] 2024-02-15 17:13:00,761 Allocating for 8774 particles
+yt : [INFO     ] 2024-02-15 17:13:01,118 Allocating octree with spatial range [9.6766e+02, 1.5128e+04, 2.9538e+03] code_length to [1.1019e+03, 1.5263e+04, 3.0880e+03] code_length
+yt : [INFO     ] 2024-02-15 17:13:01,119 Allocating Octree for 8774 particles
+yt : [INFO     ] 2024-02-15 17:13:01,127 Allocated 34617 nodes in octree
+yt : [INFO     ] 2024-02-15 17:13:01,127 Octree bound 8774 particles
+
+
+gal: 8
+
+[ 1034.7678 15195.548   3020.9219]
+[octree zoom_bbox_filter:] using center:  [1034.7678, 15195.548, 3020.9219]
+
+[octree zoom] new zoomed bbox (comoving/h) in code units=  [[967.657822265625, 1101.8778222656251], [15128.4378515625, 15262.6578515625], [2953.811875, 3088.031875]]
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 231.37it/s]
+yt : [INFO     ] 2024-02-15 17:13:01,169 Allocating octree with spatial range [9.6766e+02, 1.5128e+04, 2.9538e+03] code_length to [1.1019e+03, 1.5263e+04, 3.0880e+03] code_length
+yt : [INFO     ] 2024-02-15 17:13:01,170 Allocating Octree for 8774 particles
+yt : [INFO     ] 2024-02-15 17:13:01,174 Allocated 17217 nodes in octree
+yt : [INFO     ] 2024-02-15 17:13:01,174 Octree bound 8774 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 251.82it/s]
+yt : [INFO     ] 2024-02-15 17:13:01,197 Allocating octree with spatial range [9.6766e+02, 1.5128e+04, 2.9538e+03] code_length to [1.1019e+03, 1.5263e+04, 3.0880e+03] code_length
+yt : [INFO     ] 2024-02-15 17:13:01,199 Allocating Octree for 8774 particles
+yt : [INFO     ] 2024-02-15 17:13:01,201 Allocated 8769 nodes in octree
+yt : [INFO     ] 2024-02-15 17:13:01,201 Octree bound 8774 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 243.60it/s]
+yt : [INFO     ] 2024-02-15 17:13:01,215 Allocating octree with spatial range [9.6766e+02, 1.5128e+04, 2.9538e+03] code_length to [1.1019e+03, 1.5263e+04, 3.0880e+03] code_length
+yt : [INFO     ] 2024-02-15 17:13:01,217 Allocating Octree for 8774 particles
+yt : [INFO     ] 2024-02-15 17:13:01,218 Allocated 4545 nodes in octree
+yt : [INFO     ] 2024-02-15 17:13:01,218 Octree bound 8774 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 238.12it/s]
+yt : [INFO     ] 2024-02-15 17:13:01,228 Allocating octree with spatial range [9.6766e+02, 1.5128e+04, 2.9538e+03] code_length to [1.1019e+03, 1.5263e+04, 3.0880e+03] code_length
+yt : [INFO     ] 2024-02-15 17:13:01,229 Allocating Octree for 8774 particles
+yt : [INFO     ] 2024-02-15 17:13:01,230 Allocated 2265 nodes in octree
+yt : [INFO     ] 2024-02-15 17:13:01,230 Octree bound 8774 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 249.01it/s]
+yt : [INFO     ] 2024-02-15 17:13:01,237 Allocating octree with spatial range [9.6766e+02, 1.5128e+04, 2.9538e+03] code_length to [1.1019e+03, 1.5263e+04, 3.0880e+03] code_length
+yt : [INFO     ] 2024-02-15 17:13:01,238 Allocating Octree for 8774 particles
+yt : [INFO     ] 2024-02-15 17:13:01,239 Allocated 1249 nodes in octree
+yt : [INFO     ] 2024-02-15 17:13:01,239 Octree bound 8774 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 256.02it/s]
+yt : [INFO     ] 2024-02-15 17:13:01,307 Calculating time from 1.000e+00 to be 4.433e+17 seconds
+yt : [INFO     ] 2024-02-15 17:13:01,307 Assuming length units are in kpc/h (comoving)
+yt : [INFO     ] 2024-02-15 17:13:01,336 Parameters: current_time              = 4.432875106722329e+17 s
+yt : [INFO     ] 2024-02-15 17:13:01,336 Parameters: domain_dimensions         = [1 1 1]
+yt : [INFO     ] 2024-02-15 17:13:01,336 Parameters: domain_left_edge          = [0. 0. 0.]
+yt : [INFO     ] 2024-02-15 17:13:01,336 Parameters: domain_right_edge         = [25000. 25000. 25000.]
+yt : [INFO     ] 2024-02-15 17:13:01,337 Parameters: cosmological_simulation   = 1
+yt : [INFO     ] 2024-02-15 17:13:01,337 Parameters: current_redshift          = 2.220446049250313e-16
+yt : [INFO     ] 2024-02-15 17:13:01,337 Parameters: omega_lambda              = 0.7
+yt : [INFO     ] 2024-02-15 17:13:01,337 Parameters: omega_matter              = 0.3
+yt : [INFO     ] 2024-02-15 17:13:01,337 Parameters: omega_radiation           = 0.0
+yt : [INFO     ] 2024-02-15 17:13:01,337 Parameters: hubble_constant           = 0.6711
+yt : [INFO     ] 2024-02-15 17:13:01,346 Allocating for 7842 particles
+yt : [INFO     ] 2024-02-15 17:13:01,766 Allocating octree with spatial range [1.0228e+04, 5.2922e+03, 3.9426e+03] code_length to [1.0362e+04, 5.4264e+03, 4.0768e+03] code_length
+yt : [INFO     ] 2024-02-15 17:13:01,768 Allocating Octree for 7842 particles
+yt : [INFO     ] 2024-02-15 17:13:01,775 Allocated 31217 nodes in octree
+yt : [INFO     ] 2024-02-15 17:13:01,775 Octree bound 7842 particles
+
+
+gal: 9
+
+[10295.105   5359.3267  4009.6912]
+[octree zoom_bbox_filter:] using center:  [10295.105, 5359.3267, 4009.6912]
+
+[octree zoom] new zoomed bbox (comoving/h) in code units=  [[10227.99546875, 10362.21546875], [5292.21666015625, 5426.43666015625], [3942.581162109375, 4076.801162109375]]
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 223.17it/s]
+yt : [INFO     ] 2024-02-15 17:13:01,813 Allocating octree with spatial range [1.0228e+04, 5.2922e+03, 3.9426e+03] code_length to [1.0362e+04, 5.4264e+03, 4.0768e+03] code_length
+yt : [INFO     ] 2024-02-15 17:13:01,815 Allocating Octree for 7842 particles
+yt : [INFO     ] 2024-02-15 17:13:01,818 Allocated 15585 nodes in octree
+yt : [INFO     ] 2024-02-15 17:13:01,818 Octree bound 7842 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 247.42it/s]
+yt : [INFO     ] 2024-02-15 17:13:01,839 Allocating octree with spatial range [1.0228e+04, 5.2922e+03, 3.9426e+03] code_length to [1.0362e+04, 5.4264e+03, 4.0768e+03] code_length
+yt : [INFO     ] 2024-02-15 17:13:01,841 Allocating Octree for 7842 particles
+yt : [INFO     ] 2024-02-15 17:13:01,843 Allocated 7881 nodes in octree
+yt : [INFO     ] 2024-02-15 17:13:01,843 Octree bound 7842 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 250.92it/s]
+yt : [INFO     ] 2024-02-15 17:13:01,855 Allocating octree with spatial range [1.0228e+04, 5.2922e+03, 3.9426e+03] code_length to [1.0362e+04, 5.4264e+03, 4.0768e+03] code_length
+yt : [INFO     ] 2024-02-15 17:13:01,857 Allocating Octree for 7842 particles
+yt : [INFO     ] 2024-02-15 17:13:01,858 Allocated 4097 nodes in octree
+yt : [INFO     ] 2024-02-15 17:13:01,858 Octree bound 7842 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 249.02it/s]
+yt : [INFO     ] 2024-02-15 17:13:01,867 Allocating octree with spatial range [1.0228e+04, 5.2922e+03, 3.9426e+03] code_length to [1.0362e+04, 5.4264e+03, 4.0768e+03] code_length
+yt : [INFO     ] 2024-02-15 17:13:01,868 Allocating Octree for 7842 particles
+yt : [INFO     ] 2024-02-15 17:13:01,869 Allocated 2113 nodes in octree
+yt : [INFO     ] 2024-02-15 17:13:01,869 Octree bound 7842 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 256.55it/s]
+yt : [INFO     ] 2024-02-15 17:13:01,876 Allocating octree with spatial range [1.0228e+04, 5.2922e+03, 3.9426e+03] code_length to [1.0362e+04, 5.4264e+03, 4.0768e+03] code_length
+yt : [INFO     ] 2024-02-15 17:13:01,877 Allocating Octree for 7842 particles
+yt : [INFO     ] 2024-02-15 17:13:01,878 Allocated 1153 nodes in octree
+yt : [INFO     ] 2024-02-15 17:13:01,878 Octree bound 7842 particles
+Interpolating (scatter) SPH field PartType0: 0it [00:00, ?it/s]Interpolating (scatter) SPH field PartType0: 1it [00:00, 248.91it/s]
+/orange/narayanan/d.zimmerman/camels_scripts/oct_nref_opt.py:74: RuntimeWarning: invalid value encountered in divide
+  plt.scatter(part_m,oct_m[:,i]/part_m,label=f'nref{nref_checks[i]}',alpha=0.3)
+Thu Feb 15 17:13:02 EST 2024
