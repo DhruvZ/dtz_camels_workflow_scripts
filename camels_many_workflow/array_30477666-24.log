@@ -1,63 +1,0 @@
-Tue Apr 30 18:35:47 EDT 2024
-c0706a-s2.ufhpc
-/orange/narayanan/d.zimmerman/camels_scripts/camels_many_workflow
-SIM TYPE:IllustrisTNG
-IllustrisTNG_1P_p3_2
-24
-yt : [INFO     ] 2024-04-30 18:36:45,296 Opening /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/IllustrisTNG_1P_p3_2/caesar_24.hdf5
-yt : [INFO     ] 2024-04-30 18:36:46,160 Found 5910 halos
-yt : [INFO     ] 2024-04-30 18:36:46,242 Found 2 galaxies
-
-GALAXY NUM: 0
-star count: 48
-gas count: 169
-
-starting with gas attributes now
-  0%|          | 0/26 [00:00<?, ?it/s]  4%|▍         | 1/26 [00:02<01:12,  2.88s/it]  8%|▊         | 2/26 [00:06<01:25,  3.55s/it] 12%|█▏        | 3/26 [00:08<00:59,  2.59s/it] 15%|█▌        | 4/26 [00:09<00:42,  1.93s/it] 19%|█▉        | 5/26 [00:10<00:32,  1.54s/it] 23%|██▎       | 6/26 [00:10<00:21,  1.07s/it] 27%|██▋       | 7/26 [00:10<00:17,  1.08it/s] 31%|███       | 8/26 [00:11<00:14,  1.22it/s] 35%|███▍      | 9/26 [00:17<00:40,  2.39s/it] 38%|███▊      | 10/26 [00:25<01:07,  4.21s/it] 42%|████▏     | 11/26 [00:27<00:49,  3.33s/it] 46%|████▌     | 12/26 [00:29<00:41,  2.93s/it] 50%|█████     | 13/26 [00:29<00:29,  2.29s/it] 54%|█████▍    | 14/26 [00:30<00:22,  1.88s/it] 58%|█████▊    | 15/26 [00:33<00:23,  2.12s/it] 62%|██████▏   | 16/26 [00:34<00:16,  1.69s/it] 65%|██████▌   | 17/26 [00:34<00:12,  1.39s/it] 69%|██████▉   | 18/26 [00:35<00:09,  1.18s/it] 73%|███████▎  | 19/26 [00:35<00:06,  1.04it/s] 77%|███████▋  | 20/26 [00:36<00:05,  1.16it/s] 81%|████████  | 21/26 [00:36<00:03,  1.51it/s] 85%|████████▍ | 22/26 [00:37<00:02,  1.51it/s] 88%|████████▊ | 23/26 [00:38<00:02,  1.31it/s] 92%|█████████▏| 24/26 [00:40<00:02,  1.01s/it] 96%|█████████▌| 25/26 [00:40<00:00,  1.09it/s]100%|██████████| 26/26 [00:44<00:00,  1.76s/it]100%|██████████| 26/26 [00:45<00:00,  1.74s/it]
-moving to star attributes now
-  0%|          | 0/17 [00:00<?, ?it/s]  6%|▌         | 1/17 [00:02<00:34,  2.16s/it] 12%|█▏        | 2/17 [00:02<00:15,  1.02s/it]100%|██████████| 17/17 [00:02<00:00,  7.06it/s]
-done copying attributes, going to edit header now
-
-GALAXY NUM: 1
-star count: 31
-gas count: 74
-
-starting with gas attributes now
-  0%|          | 0/26 [00:00<?, ?it/s]  4%|▍         | 1/26 [00:01<00:42,  1.72s/it]  8%|▊         | 2/26 [00:10<02:16,  5.69s/it] 12%|█▏        | 3/26 [00:11<01:28,  3.86s/it] 15%|█▌        | 4/26 [00:12<00:54,  2.49s/it] 19%|█▉        | 5/26 [00:12<00:36,  1.74s/it] 23%|██▎       | 6/26 [00:12<00:24,  1.23s/it] 27%|██▋       | 7/26 [00:13<00:17,  1.07it/s] 31%|███       | 8/26 [00:13<00:14,  1.27it/s] 35%|███▍      | 9/26 [00:28<01:29,  5.25s/it] 38%|███▊      | 10/26 [00:41<02:01,  7.62s/it] 42%|████▏     | 11/26 [00:44<01:30,  6.06s/it] 46%|████▌     | 12/26 [00:44<01:00,  4.30s/it] 50%|█████     | 13/26 [00:44<00:39,  3.07s/it] 54%|█████▍    | 14/26 [00:46<00:30,  2.51s/it] 58%|█████▊    | 15/26 [00:47<00:22,  2.09s/it] 62%|██████▏   | 16/26 [00:47<00:15,  1.55s/it] 65%|██████▌   | 17/26 [00:47<00:10,  1.20s/it] 69%|██████▉   | 18/26 [00:49<00:11,  1.47s/it] 73%|███████▎  | 19/26 [00:50<00:07,  1.10s/it] 77%|███████▋  | 20/26 [00:50<00:05,  1.17it/s] 81%|████████  | 21/26 [00:50<00:03,  1.55it/s] 85%|████████▍ | 22/26 [00:52<00:03,  1.06it/s] 88%|████████▊ | 23/26 [00:52<00:02,  1.28it/s] 92%|█████████▏| 24/26 [00:53<00:01,  1.46it/s] 96%|█████████▌| 25/26 [00:53<00:00,  1.81it/s]100%|██████████| 26/26 [00:55<00:00,  1.06s/it]100%|██████████| 26/26 [00:55<00:00,  2.14s/it]
-moving to star attributes now
-  0%|          | 0/17 [00:00<?, ?it/s] 12%|█▏        | 2/17 [00:00<00:00, 16.08it/s]100%|██████████| 17/17 [00:00<00:00, 95.89it/s]
-done copying attributes, going to edit header now
-  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:00<00:00,  5.65it/s]100%|██████████| 2/2 [00:00<00:00, 11.01it/s]
-SAVING
-yt : [INFO     ] 2024-04-30 18:39:22,722 Opening /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/IllustrisTNG_1P_p3_2/caesar_24.hdf5
-yt : [INFO     ] 2024-04-30 18:39:22,913 Found 5910 halos
-yt : [INFO     ] 2024-04-30 18:39:22,932 Found 2 galaxies
-yt : [INFO     ] 2024-04-30 18:40:30,434 Opening /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/IllustrisTNG_1P_p3_2/caesar_24.hdf5
-yt : [INFO     ] 2024-04-30 18:40:30,574 Found 5910 halos
-yt : [INFO     ] 2024-04-30 18:40:30,590 Found 2 galaxies
-processing model file for galaxy,snapshot:  0,24
-setting up the output directory in case it doesnt already exist
-snap is: 24
-model dir is: /orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p3_2/snap24/
-setting up the PD run output directory in case it doesnt already exist
-snap is: 24
-output dir is: /orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p3_2/snap24/
-writing to /orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p3_2/snap24/snap24_galaxy0.py
-writing slurm submission master script file
-/orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p3_2/snap24/master.snap24.job
-date
-processing model file for galaxy,snapshot:  1,24
-setting up the output directory in case it doesnt already exist
-snap is: 24
-model dir is: /orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p3_2/snap24/
-mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p3_2/snap24/’: File exists
-setting up the PD run output directory in case it doesnt already exist
-snap is: 24
-output dir is: /orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p3_2/snap24/
-mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p3_2/snap24/’: File exists
-mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p3_2/snap24/outlogs’: File exists
-writing to /orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p3_2/snap24/snap24_galaxy1.py
-writing slurm submission master script file
-/orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p3_2/snap24/master.snap24.job
-date
-{'snap24': 2}

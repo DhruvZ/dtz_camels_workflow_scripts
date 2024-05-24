@@ -1,255 +1,0 @@
-Tue Apr 30 18:35:48 EDT 2024
-c0706a-s24.ufhpc
-/orange/narayanan/d.zimmerman/camels_scripts/camels_many_workflow
-SIM TYPE:IllustrisTNG
-IllustrisTNG_1P_p6_n2
-18
-yt : [INFO     ] 2024-04-30 18:36:35,178 Opening /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/IllustrisTNG_1P_p6_n2/caesar_18.hdf5
-yt : [INFO     ] 2024-04-30 18:36:36,052 Found 4209 halos
-yt : [INFO     ] 2024-04-30 18:36:36,075 Found 10 galaxies
-
-GALAXY NUM: 0
-star count: 232
-gas count: 332
-
-starting with gas attributes now
-  0%|          | 0/26 [00:00<?, ?it/s]  4%|▍         | 1/26 [00:04<01:41,  4.06s/it]  8%|▊         | 2/26 [00:06<01:15,  3.14s/it] 12%|█▏        | 3/26 [00:07<00:44,  1.94s/it] 15%|█▌        | 4/26 [00:07<00:30,  1.38s/it] 19%|█▉        | 5/26 [00:08<00:23,  1.12s/it] 23%|██▎       | 6/26 [00:08<00:15,  1.27it/s] 27%|██▋       | 7/26 [00:08<00:13,  1.42it/s] 31%|███       | 8/26 [00:09<00:11,  1.62it/s] 35%|███▍      | 9/26 [00:13<00:27,  1.61s/it] 38%|███▊      | 10/26 [00:15<00:29,  1.85s/it] 42%|████▏     | 11/26 [00:16<00:21,  1.44s/it] 46%|████▌     | 12/26 [00:16<00:17,  1.28s/it] 50%|█████     | 13/26 [00:19<00:21,  1.63s/it] 54%|█████▍    | 14/26 [00:20<00:16,  1.35s/it] 58%|█████▊    | 15/26 [00:31<00:49,  4.52s/it] 62%|██████▏   | 16/26 [00:34<00:38,  3.88s/it] 65%|██████▌   | 17/26 [00:35<00:27,  3.07s/it] 69%|██████▉   | 18/26 [00:36<00:18,  2.37s/it] 73%|███████▎  | 19/26 [00:36<00:12,  1.76s/it] 77%|███████▋  | 20/26 [00:37<00:08,  1.37s/it] 81%|████████  | 21/26 [00:37<00:04,  1.00it/s] 85%|████████▍ | 22/26 [00:37<00:03,  1.19it/s] 88%|████████▊ | 23/26 [00:38<00:02,  1.36it/s] 92%|█████████▏| 24/26 [00:39<00:01,  1.28it/s] 96%|█████████▌| 25/26 [00:39<00:00,  1.38it/s]100%|██████████| 26/26 [00:41<00:00,  1.04s/it]100%|██████████| 26/26 [00:41<00:00,  1.59s/it]
-moving to star attributes now
-  0%|          | 0/17 [00:00<?, ?it/s]100%|██████████| 17/17 [00:00<00:00, 194.75it/s]
-done copying attributes, going to edit header now
-
-GALAXY NUM: 1
-star count: 202
-gas count: 271
-
-starting with gas attributes now
-  0%|          | 0/26 [00:00<?, ?it/s]  4%|▍         | 1/26 [00:01<00:31,  1.26s/it]  8%|▊         | 2/26 [00:02<00:30,  1.25s/it] 12%|█▏        | 3/26 [00:02<00:18,  1.27it/s] 15%|█▌        | 4/26 [00:02<00:12,  1.79it/s] 19%|█▉        | 5/26 [00:03<00:12,  1.63it/s] 23%|██▎       | 6/26 [00:03<00:08,  2.25it/s] 27%|██▋       | 7/26 [00:04<00:07,  2.66it/s] 31%|███       | 8/26 [00:04<00:05,  3.18it/s] 35%|███▍      | 9/26 [00:09<00:30,  1.80s/it] 38%|███▊      | 10/26 [00:13<00:39,  2.47s/it] 42%|████▏     | 11/26 [00:13<00:27,  1.81s/it] 46%|████▌     | 12/26 [00:13<00:18,  1.32s/it] 50%|█████     | 13/26 [00:13<00:12,  1.01it/s] 54%|█████▍    | 14/26 [00:14<00:09,  1.22it/s] 58%|█████▊    | 15/26 [00:15<00:09,  1.15it/s] 62%|██████▏   | 16/26 [00:15<00:06,  1.45it/s] 65%|██████▌   | 17/26 [00:15<00:05,  1.72it/s] 69%|██████▉   | 18/26 [00:16<00:03,  2.11it/s] 73%|███████▎  | 19/26 [00:16<00:02,  2.62it/s] 77%|███████▋  | 20/26 [00:16<00:01,  3.00it/s] 81%|████████  | 21/26 [00:16<00:01,  3.74it/s] 85%|████████▍ | 22/26 [00:16<00:01,  3.95it/s] 88%|████████▊ | 23/26 [00:17<00:00,  4.11it/s] 92%|█████████▏| 24/26 [00:17<00:00,  3.39it/s] 96%|█████████▌| 25/26 [00:17<00:00,  3.72it/s]100%|██████████| 26/26 [00:22<00:00,  1.53s/it]100%|██████████| 26/26 [00:22<00:00,  1.17it/s]
-moving to star attributes now
-  0%|          | 0/17 [00:00<?, ?it/s]100%|██████████| 17/17 [00:00<00:00, 385.31it/s]
-done copying attributes, going to edit header now
-
-GALAXY NUM: 2
-star count: 196
-gas count: 354
-
-starting with gas attributes now
-  0%|          | 0/26 [00:00<?, ?it/s]  4%|▍         | 1/26 [00:01<00:25,  1.03s/it]  8%|▊         | 2/26 [00:02<00:26,  1.12s/it] 12%|█▏        | 3/26 [00:02<00:16,  1.41it/s] 15%|█▌        | 4/26 [00:02<00:11,  1.90it/s] 19%|█▉        | 5/26 [00:03<00:10,  2.07it/s] 23%|██▎       | 6/26 [00:03<00:07,  2.78it/s] 27%|██▋       | 7/26 [00:03<00:06,  3.14it/s] 31%|███       | 8/26 [00:03<00:04,  3.63it/s] 35%|███▍      | 9/26 [00:06<00:16,  1.06it/s] 38%|███▊      | 10/26 [00:07<00:17,  1.11s/it] 42%|████▏     | 11/26 [00:16<00:54,  3.61s/it] 46%|████▌     | 12/26 [00:34<01:49,  7.79s/it] 50%|█████     | 13/26 [00:34<01:12,  5.59s/it] 54%|█████▍    | 14/26 [00:35<00:48,  4.01s/it] 58%|█████▊    | 15/26 [00:36<00:34,  3.10s/it] 62%|██████▏   | 16/26 [00:36<00:22,  2.24s/it] 65%|██████▌   | 17/26 [00:36<00:14,  1.63s/it] 69%|██████▉   | 18/26 [00:36<00:09,  1.21s/it] 73%|███████▎  | 19/26 [00:37<00:07,  1.05s/it] 77%|███████▋  | 20/26 [00:37<00:04,  1.25it/s] 81%|████████  | 21/26 [00:37<00:02,  1.69it/s] 85%|████████▍ | 22/26 [00:37<00:01,  2.08it/s] 88%|████████▊ | 23/26 [00:38<00:01,  2.48it/s] 92%|█████████▏| 24/26 [00:38<00:00,  2.43it/s] 96%|█████████▌| 25/26 [00:38<00:00,  2.86it/s]100%|██████████| 26/26 [00:39<00:00,  1.87it/s]100%|██████████| 26/26 [00:39<00:00,  1.53s/it]
-moving to star attributes now
-  0%|          | 0/17 [00:00<?, ?it/s]100%|██████████| 17/17 [00:00<00:00, 649.62it/s]
-done copying attributes, going to edit header now
-
-GALAXY NUM: 3
-star count: 191
-gas count: 303
-
-starting with gas attributes now
-  0%|          | 0/26 [00:00<?, ?it/s]  4%|▍         | 1/26 [00:01<00:25,  1.01s/it]  8%|▊         | 2/26 [00:03<00:42,  1.78s/it] 12%|█▏        | 3/26 [00:03<00:24,  1.08s/it] 15%|█▌        | 4/26 [00:03<00:16,  1.36it/s] 19%|█▉        | 5/26 [00:04<00:12,  1.65it/s] 23%|██▎       | 6/26 [00:06<00:23,  1.18s/it] 27%|██▋       | 7/26 [00:07<00:21,  1.14s/it] 31%|███       | 8/26 [00:07<00:15,  1.20it/s] 35%|███▍      | 9/26 [00:12<00:34,  2.03s/it] 38%|███▊      | 10/26 [00:14<00:31,  1.98s/it] 42%|████▏     | 11/26 [00:14<00:21,  1.47s/it] 46%|████▌     | 12/26 [00:14<00:15,  1.09s/it] 50%|█████     | 13/26 [00:15<00:11,  1.16it/s] 54%|█████▍    | 14/26 [00:15<00:08,  1.41it/s] 58%|█████▊    | 15/26 [00:16<00:09,  1.22it/s] 62%|██████▏   | 16/26 [00:16<00:06,  1.54it/s] 65%|██████▌   | 17/26 [00:17<00:04,  1.90it/s] 69%|██████▉   | 18/26 [00:17<00:03,  2.30it/s] 73%|███████▎  | 19/26 [00:17<00:02,  2.80it/s] 77%|███████▋  | 20/26 [00:17<00:01,  3.17it/s] 81%|████████  | 21/26 [00:17<00:01,  3.92it/s] 85%|████████▍ | 22/26 [00:18<00:01,  3.74it/s] 88%|████████▊ | 23/26 [00:18<00:00,  3.76it/s] 92%|█████████▏| 24/26 [00:18<00:00,  3.01it/s] 96%|█████████▌| 25/26 [00:18<00:00,  3.40it/s]100%|██████████| 26/26 [00:19<00:00,  2.12it/s]100%|██████████| 26/26 [00:20<00:00,  1.30it/s]
-moving to star attributes now
-  0%|          | 0/17 [00:00<?, ?it/s]  6%|▌         | 1/17 [00:01<00:17,  1.12s/it]100%|██████████| 17/17 [00:01<00:00, 14.64it/s]
-done copying attributes, going to edit header now
-
-GALAXY NUM: 4
-star count: 69
-gas count: 130
-
-starting with gas attributes now
-  0%|          | 0/26 [00:00<?, ?it/s]  4%|▍         | 1/26 [00:01<00:38,  1.54s/it]  8%|▊         | 2/26 [00:03<00:35,  1.49s/it] 12%|█▏        | 3/26 [00:03<00:26,  1.16s/it] 15%|█▌        | 4/26 [00:04<00:17,  1.23it/s] 19%|█▉        | 5/26 [00:05<00:20,  1.03it/s] 23%|██▎       | 6/26 [00:05<00:13,  1.43it/s] 27%|██▋       | 7/26 [00:05<00:12,  1.56it/s] 31%|███       | 8/26 [00:06<00:08,  2.02it/s] 35%|███▍      | 9/26 [00:08<00:18,  1.10s/it] 38%|███▊      | 10/26 [00:10<00:19,  1.23s/it] 42%|████▏     | 11/26 [00:10<00:13,  1.09it/s] 46%|████▌     | 12/26 [00:10<00:09,  1.43it/s] 50%|█████     | 13/26 [00:10<00:07,  1.74it/s] 54%|█████▍    | 14/26 [00:11<00:06,  1.96it/s] 58%|█████▊    | 15/26 [00:12<00:07,  1.56it/s] 62%|██████▏   | 16/26 [00:12<00:05,  1.90it/s] 65%|██████▌   | 17/26 [00:12<00:04,  2.12it/s] 69%|██████▉   | 18/26 [00:13<00:03,  2.38it/s] 73%|███████▎  | 19/26 [00:13<00:02,  2.89it/s] 77%|███████▋  | 20/26 [00:13<00:01,  3.25it/s] 81%|████████  | 21/26 [00:13<00:01,  3.72it/s] 85%|████████▍ | 22/26 [00:13<00:01,  3.96it/s] 88%|████████▊ | 23/26 [00:14<00:00,  4.17it/s] 92%|█████████▏| 24/26 [00:14<00:00,  3.47it/s] 96%|█████████▌| 25/26 [00:14<00:00,  3.77it/s]100%|██████████| 26/26 [00:18<00:00,  1.20s/it]100%|██████████| 26/26 [00:18<00:00,  1.42it/s]
-moving to star attributes now
-  0%|          | 0/17 [00:00<?, ?it/s]100%|██████████| 17/17 [00:00<00:00, 541.04it/s]
-done copying attributes, going to edit header now
-
-GALAXY NUM: 5
-star count: 58
-gas count: 139
-
-starting with gas attributes now
-  0%|          | 0/26 [00:00<?, ?it/s]  4%|▍         | 1/26 [00:00<00:24,  1.01it/s]  8%|▊         | 2/26 [00:02<00:26,  1.10s/it] 12%|█▏        | 3/26 [00:03<00:27,  1.18s/it] 15%|█▌        | 4/26 [00:04<00:25,  1.15s/it] 19%|█▉        | 5/26 [00:04<00:18,  1.15it/s] 23%|██▎       | 6/26 [00:05<00:12,  1.63it/s] 27%|██▋       | 7/26 [00:05<00:10,  1.83it/s] 31%|███       | 8/26 [00:05<00:07,  2.29it/s] 35%|███▍      | 9/26 [00:08<00:21,  1.25s/it] 38%|███▊      | 10/26 [00:10<00:24,  1.51s/it] 42%|████▏     | 11/26 [00:11<00:18,  1.27s/it] 46%|████▌     | 12/26 [00:11<00:13,  1.04it/s] 50%|█████     | 13/26 [00:12<00:09,  1.34it/s] 54%|█████▍    | 14/26 [00:14<00:13,  1.14s/it] 58%|█████▊    | 15/26 [00:20<00:28,  2.59s/it] 62%|██████▏   | 16/26 [00:20<00:20,  2.00s/it] 65%|██████▌   | 17/26 [00:20<00:13,  1.48s/it] 69%|██████▉   | 18/26 [00:21<00:09,  1.14s/it] 73%|███████▎  | 19/26 [00:21<00:06,  1.16it/s] 77%|███████▋  | 20/26 [00:21<00:04,  1.48it/s] 81%|████████  | 21/26 [00:21<00:02,  1.96it/s] 85%|████████▍ | 22/26 [00:22<00:01,  2.33it/s] 88%|████████▊ | 23/26 [00:22<00:01,  2.67it/s] 92%|█████████▏| 24/26 [00:22<00:00,  2.52it/s] 96%|█████████▌| 25/26 [00:25<00:00,  1.02it/s]100%|██████████| 26/26 [00:26<00:00,  1.02s/it]100%|██████████| 26/26 [00:26<00:00,  1.01s/it]
-moving to star attributes now
-  0%|          | 0/17 [00:00<?, ?it/s]  6%|▌         | 1/17 [00:00<00:04,  3.67it/s]100%|██████████| 17/17 [00:00<00:00, 55.26it/s]
-done copying attributes, going to edit header now
-
-GALAXY NUM: 6
-star count: 50
-gas count: 189
-
-starting with gas attributes now
-  0%|          | 0/26 [00:00<?, ?it/s]  4%|▍         | 1/26 [00:01<00:25,  1.03s/it]  8%|▊         | 2/26 [00:02<00:28,  1.18s/it] 12%|█▏        | 3/26 [00:02<00:17,  1.31it/s] 15%|█▌        | 4/26 [00:02<00:13,  1.61it/s] 19%|█▉        | 5/26 [00:03<00:11,  1.84it/s] 23%|██▎       | 6/26 [00:03<00:07,  2.51it/s] 27%|██▋       | 7/26 [00:03<00:06,  2.87it/s] 31%|███       | 8/26 [00:04<00:05,  3.10it/s] 35%|███▍      | 9/26 [00:07<00:21,  1.26s/it] 38%|███▊      | 10/26 [00:18<01:06,  4.17s/it] 42%|████▏     | 11/26 [00:18<00:47,  3.15s/it] 46%|████▌     | 12/26 [00:19<00:31,  2.26s/it] 50%|█████     | 13/26 [00:20<00:23,  1.84s/it] 54%|█████▍    | 14/26 [00:20<00:17,  1.44s/it] 58%|█████▊    | 15/26 [00:24<00:24,  2.27s/it] 62%|██████▏   | 16/26 [00:25<00:17,  1.73s/it] 65%|██████▌   | 17/26 [00:25<00:11,  1.29s/it] 69%|██████▉   | 18/26 [00:25<00:07,  1.03it/s] 73%|███████▎  | 19/26 [00:26<00:05,  1.24it/s] 77%|███████▋  | 20/26 [00:26<00:04,  1.28it/s] 81%|████████  | 21/26 [00:26<00:02,  1.70it/s] 85%|████████▍ | 22/26 [00:27<00:02,  1.64it/s] 88%|████████▊ | 23/26 [00:27<00:01,  2.01it/s] 92%|█████████▏| 24/26 [00:28<00:00,  2.00it/s] 96%|█████████▌| 25/26 [00:28<00:00,  2.39it/s]100%|██████████| 26/26 [00:29<00:00,  1.69it/s]100%|██████████| 26/26 [00:29<00:00,  1.14s/it]
-moving to star attributes now
-  0%|          | 0/17 [00:00<?, ?it/s]100%|██████████| 17/17 [00:00<00:00, 577.33it/s]
-done copying attributes, going to edit header now
-
-GALAXY NUM: 7
-star count: 41
-gas count: 115
-
-starting with gas attributes now
-  0%|          | 0/26 [00:00<?, ?it/s]  4%|▍         | 1/26 [00:01<00:36,  1.46s/it]  8%|▊         | 2/26 [00:02<00:31,  1.32s/it] 12%|█▏        | 3/26 [00:05<00:42,  1.85s/it] 15%|█▌        | 4/26 [00:05<00:28,  1.29s/it] 19%|█▉        | 5/26 [00:05<00:20,  1.03it/s] 23%|██▎       | 6/26 [00:06<00:13,  1.47it/s] 27%|██▋       | 7/26 [00:06<00:13,  1.42it/s] 31%|███       | 8/26 [00:07<00:12,  1.46it/s] 35%|███▍      | 9/26 [00:10<00:24,  1.42s/it] 38%|███▊      | 10/26 [00:12<00:24,  1.54s/it] 42%|████▏     | 11/26 [00:13<00:19,  1.30s/it] 46%|████▌     | 12/26 [00:13<00:13,  1.03it/s] 50%|█████     | 13/26 [00:13<00:09,  1.33it/s] 54%|█████▍    | 14/26 [00:15<00:12,  1.04s/it] 58%|█████▊    | 15/26 [00:18<00:17,  1.63s/it] 62%|██████▏   | 16/26 [00:18<00:13,  1.34s/it] 65%|██████▌   | 17/26 [00:19<00:09,  1.01s/it] 69%|██████▉   | 18/26 [00:19<00:06,  1.28it/s] 73%|███████▎  | 19/26 [00:19<00:04,  1.67it/s] 77%|███████▋  | 20/26 [00:21<00:05,  1.15it/s] 81%|████████  | 21/26 [00:21<00:03,  1.48it/s] 85%|████████▍ | 22/26 [00:21<00:02,  1.83it/s] 88%|████████▊ | 23/26 [00:21<00:01,  2.21it/s] 92%|█████████▏| 24/26 [00:22<00:00,  2.22it/s] 96%|█████████▌| 25/26 [00:22<00:00,  2.61it/s]100%|██████████| 26/26 [00:23<00:00,  1.79it/s]100%|██████████| 26/26 [00:28<00:00,  1.08s/it]
-moving to star attributes now
-  0%|          | 0/17 [00:00<?, ?it/s]100%|██████████| 17/17 [00:00<00:00, 391.47it/s]
-done copying attributes, going to edit header now
-
-GALAXY NUM: 8
-star count: 34
-gas count: 221
-
-starting with gas attributes now
-  0%|          | 0/26 [00:00<?, ?it/s]  4%|▍         | 1/26 [00:00<00:23,  1.06it/s]  8%|▊         | 2/26 [00:04<01:03,  2.65s/it] 12%|█▏        | 3/26 [00:05<00:38,  1.69s/it] 15%|█▌        | 4/26 [00:07<00:39,  1.80s/it] 19%|█▉        | 5/26 [00:08<00:34,  1.64s/it] 23%|██▎       | 6/26 [00:08<00:22,  1.14s/it] 27%|██▋       | 7/26 [00:09<00:16,  1.18it/s] 31%|███       | 8/26 [00:09<00:11,  1.57it/s] 35%|███▍      | 9/26 [00:13<00:31,  1.87s/it] 38%|███▊      | 10/26 [00:16<00:32,  2.05s/it] 42%|████▏     | 11/26 [00:16<00:23,  1.55s/it] 46%|████▌     | 12/26 [00:17<00:15,  1.14s/it] 50%|█████     | 13/26 [00:17<00:11,  1.16it/s] 54%|█████▍    | 14/26 [00:18<00:10,  1.17it/s] 58%|█████▊    | 15/26 [00:26<00:32,  3.00s/it] 62%|██████▏   | 16/26 [00:26<00:21,  2.17s/it] 65%|██████▌   | 17/26 [00:26<00:14,  1.59s/it] 69%|██████▉   | 18/26 [00:26<00:09,  1.18s/it] 73%|███████▎  | 19/26 [00:26<00:06,  1.13it/s] 77%|███████▋  | 20/26 [00:27<00:04,  1.45it/s] 81%|████████  | 21/26 [00:27<00:02,  1.94it/s] 85%|████████▍ | 22/26 [00:27<00:01,  2.34it/s] 88%|████████▊ | 23/26 [00:27<00:01,  2.73it/s] 92%|█████████▏| 24/26 [00:29<00:01,  1.15it/s] 96%|█████████▌| 25/26 [00:30<00:00,  1.32it/s]100%|██████████| 26/26 [00:31<00:00,  1.09it/s]100%|██████████| 26/26 [00:31<00:00,  1.22s/it]
-moving to star attributes now
-  0%|          | 0/17 [00:00<?, ?it/s]100%|██████████| 17/17 [00:00<00:00, 724.55it/s]
-done copying attributes, going to edit header now
-
-GALAXY NUM: 9
-star count: 29
-gas count: 105
-
-starting with gas attributes now
-  0%|          | 0/26 [00:00<?, ?it/s]  4%|▍         | 1/26 [00:00<00:23,  1.06it/s]  8%|▊         | 2/26 [00:03<00:51,  2.14s/it] 12%|█▏        | 3/26 [00:04<00:35,  1.53s/it] 15%|█▌        | 4/26 [00:04<00:22,  1.01s/it] 19%|█▉        | 5/26 [00:05<00:16,  1.28it/s] 23%|██▎       | 6/26 [00:05<00:11,  1.79it/s] 27%|██▋       | 7/26 [00:05<00:08,  2.20it/s] 31%|███       | 8/26 [00:05<00:06,  2.72it/s] 35%|███▍      | 9/26 [00:13<00:42,  2.49s/it] 38%|███▊      | 10/26 [00:52<03:44, 14.03s/it] 42%|████▏     | 11/26 [00:55<02:36, 10.42s/it] 46%|████▌     | 12/26 [00:55<01:42,  7.32s/it] 50%|█████     | 13/26 [00:55<01:07,  5.17s/it] 54%|█████▍    | 14/26 [01:09<01:32,  7.70s/it] 58%|█████▊    | 15/26 [01:15<01:20,  7.32s/it] 62%|██████▏   | 16/26 [01:19<01:03,  6.32s/it] 65%|██████▌   | 17/26 [01:19<00:40,  4.49s/it] 69%|██████▉   | 18/26 [01:21<00:28,  3.53s/it] 73%|███████▎  | 19/26 [01:22<00:19,  2.76s/it] 77%|███████▋  | 20/26 [01:22<00:11,  2.00s/it] 81%|████████  | 21/26 [01:28<00:14,  2.83s/it] 85%|████████▍ | 22/26 [01:30<00:11,  2.86s/it] 88%|████████▊ | 23/26 [01:30<00:06,  2.09s/it] 92%|█████████▏| 24/26 [01:30<00:03,  1.59s/it] 96%|█████████▌| 25/26 [01:31<00:01,  1.18s/it]100%|██████████| 26/26 [01:32<00:00,  1.09s/it]100%|██████████| 26/26 [01:32<00:00,  3.55s/it]
-moving to star attributes now
-  0%|          | 0/17 [00:00<?, ?it/s]100%|██████████| 17/17 [00:00<00:00, 206.90it/s]
-done copying attributes, going to edit header now
-  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 223.73it/s]
-SAVING
-yt : [INFO     ] 2024-04-30 18:44:28,836 Opening /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/IllustrisTNG_1P_p6_n2/caesar_18.hdf5
-yt : [INFO     ] 2024-04-30 18:44:28,906 Found 4209 halos
-yt : [INFO     ] 2024-04-30 18:44:28,915 Found 10 galaxies
-yt : [INFO     ] 2024-04-30 18:45:17,156 Opening /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/IllustrisTNG_1P_p6_n2/caesar_18.hdf5
-yt : [INFO     ] 2024-04-30 18:45:17,311 Found 4209 halos
-yt : [INFO     ] 2024-04-30 18:45:17,316 Found 10 galaxies
-processing model file for galaxy,snapshot:  0,18
-setting up the output directory in case it doesnt already exist
-snap is: 18
-model dir is: /orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/
-setting up the PD run output directory in case it doesnt already exist
-snap is: 18
-output dir is: /orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap18/
-writing to /orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/snap18_galaxy0.py
-writing slurm submission master script file
-/orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/master.snap18.job
-date
-processing model file for galaxy,snapshot:  1,18
-setting up the output directory in case it doesnt already exist
-snap is: 18
-model dir is: /orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/
-mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/’: File exists
-setting up the PD run output directory in case it doesnt already exist
-snap is: 18
-output dir is: /orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap18/
-mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap18/’: File exists
-mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap18/outlogs’: File exists
-writing to /orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/snap18_galaxy1.py
-writing slurm submission master script file
-/orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/master.snap18.job
-date
-processing model file for galaxy,snapshot:  2,18
-setting up the output directory in case it doesnt already exist
-snap is: 18
-model dir is: /orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/
-mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/’: File exists
-setting up the PD run output directory in case it doesnt already exist
-snap is: 18
-output dir is: /orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap18/
-mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap18/’: File exists
-mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap18/outlogs’: File exists
-writing to /orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/snap18_galaxy2.py
-writing slurm submission master script file
-/orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/master.snap18.job
-date
-processing model file for galaxy,snapshot:  3,18
-setting up the output directory in case it doesnt already exist
-snap is: 18
-model dir is: /orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/
-mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/’: File exists
-setting up the PD run output directory in case it doesnt already exist
-snap is: 18
-output dir is: /orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap18/
-mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap18/’: File exists
-mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap18/outlogs’: File exists
-writing to /orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/snap18_galaxy3.py
-writing slurm submission master script file
-/orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/master.snap18.job
-date
-processing model file for galaxy,snapshot:  4,18
-setting up the output directory in case it doesnt already exist
-snap is: 18
-model dir is: /orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/
-mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/’: File exists
-setting up the PD run output directory in case it doesnt already exist
-snap is: 18
-output dir is: /orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap18/
-mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap18/’: File exists
-mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap18/outlogs’: File exists
-writing to /orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/snap18_galaxy4.py
-writing slurm submission master script file
-/orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/master.snap18.job
-date
-processing model file for galaxy,snapshot:  5,18
-setting up the output directory in case it doesnt already exist
-snap is: 18
-model dir is: /orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/
-mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/’: File exists
-setting up the PD run output directory in case it doesnt already exist
-snap is: 18
-output dir is: /orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap18/
-mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap18/’: File exists
-mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap18/outlogs’: File exists
-writing to /orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/snap18_galaxy5.py
-writing slurm submission master script file
-/orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/master.snap18.job
-date
-processing model file for galaxy,snapshot:  6,18
-setting up the output directory in case it doesnt already exist
-snap is: 18
-model dir is: /orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/
-mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/’: File exists
-setting up the PD run output directory in case it doesnt already exist
-snap is: 18
-output dir is: /orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap18/
-mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap18/’: File exists
-mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap18/outlogs’: File exists
-writing to /orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/snap18_galaxy6.py
-writing slurm submission master script file
-/orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/master.snap18.job
-date
-processing model file for galaxy,snapshot:  7,18
-setting up the output directory in case it doesnt already exist
-snap is: 18
-model dir is: /orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/
-mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/’: File exists
-setting up the PD run output directory in case it doesnt already exist
-snap is: 18
-output dir is: /orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap18/
-mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap18/’: File exists
-mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap18/outlogs’: File exists
-writing to /orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/snap18_galaxy7.py
-writing slurm submission master script file
-/orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/master.snap18.job
-date
-processing model file for galaxy,snapshot:  8,18
-setting up the output directory in case it doesnt already exist
-snap is: 18
-model dir is: /orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/
-mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/’: File exists
-setting up the PD run output directory in case it doesnt already exist
-snap is: 18
-output dir is: /orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap18/
-mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap18/’: File exists
-mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap18/outlogs’: File exists
-writing to /orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/snap18_galaxy8.py
-writing slurm submission master script file
-/orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/master.snap18.job
-date
-processing model file for galaxy,snapshot:  9,18
-setting up the output directory in case it doesnt already exist
-snap is: 18
-model dir is: /orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/
-mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/’: File exists
-setting up the PD run output directory in case it doesnt already exist
-snap is: 18
-output dir is: /orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap18/
-mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap18/’: File exists
-mkdir: cannot create directory ‘/orange/narayanan/d.zimmerman/camels_results/pd_runs/IllustrisTNG_1P_p6_n2/snap18/outlogs’: File exists
-writing to /orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/snap18_galaxy9.py
-writing slurm submission master script file
-/orange/narayanan/d.zimmerman/camels_results/pd_scripts/IllustrisTNG_1P_p6_n2/snap18/master.snap18.job
-date
-{'snap18': 10}
