@@ -61,7 +61,7 @@ then
 elif [ $(($SLURM_ARRAY_TASK_ID)) -lt 100 ]
 then
 	cp /orange/narayanan/d.zimmerman/camels_results/catalogs_loaded/${sim_id}/${caes_in_name}_0${SLURM_ARRAY_TASK_ID}.hdf5 /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/${sim_id}/${caes_out_name}_${SLURM_ARRAY_TASK_ID}.hdf5
-	 cp /orange/narayanan/d.zimmerman/camels_results/catalogs_loaded/${sim_id}/${subfind_in_name}_0${SLURM_ARRAY_TASK_ID}.hdf5 /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/${sim_id}/${subfind_out_name}_${SLURM_ARRAY_TASK_ID}.hdf5
+	cp /orange/narayanan/d.zimmerman/camels_results/catalogs_loaded/${sim_id}/${subfind_in_name}_0${SLURM_ARRAY_TASK_ID}.hdf5 /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/${sim_id}/${subfind_out_name}_${SLURM_ARRAY_TASK_ID}.hdf5
 else
         cp /orange/narayanan/d.zimmerman/camels_results/catalogs_loaded/${sim_id}/${caes_in_name}_${SLURM_ARRAY_TASK_ID}.hdf5 /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/${sim_id}/${caes_out_name}_${SLURM_ARRAY_TASK_ID}.hdf5
 	cp /orange/narayanan/d.zimmerman/camels_results/catalogs_loaded/${sim_id}/${subfind_in_name}_${SLURM_ARRAY_TASK_ID}.hdf5 /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/${sim_id}/${subfind_out_name}_${SLURM_ARRAY_TASK_ID}.hdf5

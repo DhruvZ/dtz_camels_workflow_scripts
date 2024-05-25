@@ -13,6 +13,7 @@ LOCAL_SIMS_DIR="/sims_loaded/"
 LOCAL_CAESAR_DIR="/catalogs_loaded/"
 CAMELS_SIMS_DIR="/Sims/"
 CAMELS_CAESAR_DIR="/Caesar/"
+CAMELS_SUBFIND_DIR="/FOF_Subfind/"
 
 snum_min=$1
 snum_max=$2
@@ -41,15 +42,19 @@ do
 	
 	in_sim_dir="${CAMELS_SIMS_DIR}${sim_name}/1P/1P_p${run_1p_param}_${run_1p_num}/"
 	in_caes_dir="${CAMELS_CAESAR_DIR}${sim_name}/1P/1P_p${run_1p_param}_${run_1p_num}/"
+	in_subfind_dir="${CAMELS_SUBFIND_DIR}${sim_name}/1P/1P_p${run_1p_param}_${run_1p_num}/"
 	out_sim_dir="/sims_loaded/${sim_name}_1P_p${run_1p_param}_${run_1p_num}/"
-	out_caes_dir="/catalogs_loaded/${sim_name}_1P_p${run_1p_param}_${run_1p_num}/"
+	out_cat_dir="/catalogs_loaded/${sim_name}_1P_p${run_1p_param}_${run_1p_num}/"
 	
 	
 	globus transfer --recursive --dry-run ${CAMELS_GLOBUS}:${in_sim_dir} ${HPG_COLLECT_GLOBUS}:${out_sim_dir}
 	echo -e "\n"
-	globus transfer --recursive --dry-run ${CAMELS_GLOBUS}:${in_caes_dir} ${HPG_COLLECT_GLOBUS}:${out_caes_dir}
+	globus transfer --recursive --dry-run ${CAMELS_GLOBUS}:${in_caes_dir} ${HPG_COLLECT_GLOBUS}:${out_cat_dir}
 	echo -e "\n"
-	
+	globus transfer --recursive --dry-run ${CAMELS_GLOBUS}:${in_subfind_dir} ${HPG_COLLECT_GLOBUS}:${out_cat_dir}
+	echo -e "\n"
+
+
 	echo -e "Please confirm the transfer is correct (y/n):"
 	
 	read confirm
@@ -59,8 +64,11 @@ do
 		echo -e "confirmed"
 		globus transfer --recursive ${CAMELS_GLOBUS}:${in_sim_dir} ${HPG_COLLECT_GLOBUS}:${out_sim_dir}
 		echo -e "\n"
-		globus transfer --recursive ${CAMELS_GLOBUS}:${in_caes_dir} ${HPG_COLLECT_GLOBUS}:${out_caes_dir}
+		globus transfer --recursive ${CAMELS_GLOBUS}:${in_caes_dir} ${HPG_COLLECT_GLOBUS}:${out_cat_dir}
 		echo -e "\n"
+		globus transfer --recursive ${CAMELS_GLOBUS}:${in_subfind_dir} ${HPG_COLLECT_GLOBUS}:${out_cat_dir}
+		echo -e "\n"
+		
 		mkdir /orange/narayanan/d.zimmerman/camels_results/filtered/${sim_name}_1P_p${run_1p_param}_${run_1p_num}/
 		mkdir /orange/narayanan/d.zimmerman/camels_results/pd_scripts/${sim_name}_1P_p${run_1p_param}_${run_1p_num}/
 		mkdir /orange/narayanan/d.zimmerman/camels_results/pd_runs/${sim_name}_1P_p${run_1p_param}_${run_1p_num}/

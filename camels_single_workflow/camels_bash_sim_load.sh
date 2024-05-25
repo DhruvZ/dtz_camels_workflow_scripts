@@ -60,6 +60,7 @@ then
 	globus transfer --recursive ${CAMELS_GLOBUS}:${in_caes_dir} ${HPG_COLLECT_GLOBUS}:${out_cat_dir}
 	echo -e "\n"
 	globus transfer --recursive ${CAMELS_GLOBUS}:${in_subfind_dir} ${HPG_COLLECT_GLOBUS}:${out_cat_dir}
+	echo -e "\n"
 else
 	echo -e "transfer cancelled"
 fi
