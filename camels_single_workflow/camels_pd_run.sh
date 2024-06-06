@@ -22,7 +22,7 @@ sim_id="${sim_name}_1P_p${run_1p_param}_${run_1p_num}"
 # 14 18 24 32 44 62 90
 
 
-for snum in 14 18 24 32 44 62 90 
+for snum in 62 90 
 do
 	echo "on snap ${snum}"
 	path=/orange/narayanan/d.zimmerman/camels_results/pd_scripts/${sim_id}/snap${snum}/master.snap${snum}.job

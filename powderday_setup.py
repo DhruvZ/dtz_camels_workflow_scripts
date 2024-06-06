@@ -15,7 +15,7 @@ nnodes=1
 # Edit these !!!
 sim_id = sys.argv[1]
 snap_num = sys.argv[2]
-
+print(f'/orange/narayanan/d.zimmerman/camels_results/catalogs_saved/{sim_id}/caesar_{snap_num}.hdf5')
 caes_file = caesar.load(f'/orange/narayanan/d.zimmerman/camels_results/catalogs_saved/{sim_id}/caesar_{snap_num}.hdf5')
 snap_redshift = caes_file.simulation.redshift
 gal_count = len(caes_file.galaxies)

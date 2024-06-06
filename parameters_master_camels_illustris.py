@@ -9,7 +9,7 @@ pd_source_dir = '/home/d.zimmerman/powderday/'
 #===============================================
 oref = 0 # over refine factor - should typically be set to 0
 n_ref = 1 # when n_particles > n_ref, octree refines further
-zoom_box_len = 50 # kpc; so the box will be +/- zoom_box_len from the center
+zoom_box_len = 100 # kpc; so the box will be +/- zoom_box_len from the center
 bbox_lim = 1.e5 # kpc - this is the initial bounding box of the grid (+/- bbox_lim)
                 # This *must* encompass all of the particles in the
                 # simulation. 
