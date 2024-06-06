@@ -17,7 +17,7 @@ CAMELS_SUBFIND_DIR="/FOF_Subfind/"
 
 snum_min=$1
 snum_max=$2
-
+caesar_load=$3
 
 module load globus
 
@@ -64,8 +64,16 @@ do
 		echo -e "confirmed"
 		globus transfer --recursive ${CAMELS_GLOBUS}:${in_sim_dir} ${HPG_COLLECT_GLOBUS}:${out_sim_dir}
 		echo -e "\n"
-		globus transfer --recursive ${CAMELS_GLOBUS}:${in_caes_dir} ${HPG_COLLECT_GLOBUS}:${out_cat_dir}
-		echo -e "\n"
+		if [ "$caesar_load" = "1" ]
+		then
+			globus transfer --recursive ${CAMELS_GLOBUS}:${in_caes_dir} ${HPG_COLLECT_GLOBUS}:${out_cat_dir}
+			echo -e "loaded caesar files"
+			echo -e "\n"
+		else
+			echo -e "no caesar load"
+			echo -e "\n"
+		fi
+				
 		globus transfer --recursive ${CAMELS_GLOBUS}:${in_subfind_dir} ${HPG_COLLECT_GLOBUS}:${out_cat_dir}
 		echo -e "\n"
 		
