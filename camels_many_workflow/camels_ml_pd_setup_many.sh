@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=camels_setup
-#SBATCH --output=array_%A-%a.log
+#SBATCH --output=array_pd_setup_%A-%a.log
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=d.zimmerman@ufl.edu
 #SBATCH --ntasks=4

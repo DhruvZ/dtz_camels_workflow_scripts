@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=camels_caesar_gen
-#SBATCH --output=%A-%a.log
+#SBATCH --output=array_caesar_%A-%a.log
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=d.zimmerman@ufl.edu
 #SBATCH --ntasks=16
