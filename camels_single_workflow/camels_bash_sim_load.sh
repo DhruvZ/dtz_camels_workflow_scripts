@@ -33,7 +33,7 @@ fi
 echo "SIM TYPE:$sim_name"
 
 in_sim_dir="${CAMELS_SIMS_DIR}${sim_name}/1P/1P_p${run_1p_param}_${run_1p_num}/"
-in_caes_dir="${CAMELS_CAESAR_DIR}${sim_name}/1P/1P_p${run_1p_param}_${run_1p_num}/"
+in_caes_dir="${CAMELS_CAESAR_DIR}${sim_name}/L25n256/1P/1P_p${run_1p_param}_${run_1p_num}/"
 in_subfind_dir="${CAMELS_SUBFIND_DIR}${sim_name}/1P/1P_p${run_1p_param}_${run_1p_num}/"
 out_sim_dir="/sims_loaded/${sim_name}_1P_p${run_1p_param}_${run_1p_num}/"
 out_cat_dir="/catalogs_loaded/${sim_name}_1P_p${run_1p_param}_${run_1p_num}/"

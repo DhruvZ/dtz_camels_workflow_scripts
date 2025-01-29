@@ -15,9 +15,10 @@ fileex='.hdf5'
 #for num in snapnums:
 caes_obj = caesar.load(fileroot+str(num)+fileex)
 gal_gasses = np.array([caes_obj.galaxies[i].masses['gas'] for i in range(len(caes_obj.galaxies))])
+gal_stars = np.array([caes_obj.galaxies[i].nstar for i in range(len(caes_obj.galaxies))])
 gal_index_list = np.array(range(len(gal_gasses)),dtype=int)
 #print(gal_index_list)
-good_gals = gal_index_list[gal_gasses > 0]
+good_gals = gal_index_list[(gal_gasses > 0) & (gal_stars >= 24)] 
 #print(good_gals)
 test_file = open(saveroot+str(num)+"/snap"+str(num)+"_gas_gals.txt","w")
 #for j in good_gals:
