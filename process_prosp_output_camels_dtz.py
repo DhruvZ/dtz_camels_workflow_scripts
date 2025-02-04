@@ -14,16 +14,15 @@ import fsps
 sps = FastStepBasis()
 #res, _ , _ = pread.results_from('galaxy_1_nonpara_fit.h5')
 #sps = pread.get_sps(res)
-
 sim_id = str(sys.argv[1])
 snap = int(sys.argv[2])
 gal_num = int(sys.argv[3])
 full_phot = int(sys.argv[4])
 z_idx = int(sys.argv[5])
-#phot_file = str(sys.argv[4])
-SNR = int(sys.argv[6])
+filt_file = str(sys.argv[6])
+SNR = int(sys.argv[7])
 try:
-    extra_label = str(sys.argv[7])
+    extra_label = str(sys.argv[8])
     extra_label = f'_{extra_label}'
 except:
     extra_label = ''
