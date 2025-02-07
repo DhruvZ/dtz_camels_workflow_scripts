@@ -63,6 +63,26 @@ def build_sps(**kwargs):
     return sps
 
 
+def lum_dist_calc(zred=None,**extras):
+    cosmo = FlatLambdaCDM(Om0=0.3,Tcmb0 = 2.725,H0 = 67.11)
+    #z = extras['zred']
+    if(zred<10**-4):
+        dl = (10*u.Mpc)
+    else:
+        dl = cosmo.luminosity_distance(zred).to(u.Mpc)
+    return dl.value
+
+def age_bin_calc(zred=None,**extras):
+    cosmo = FlatLambdaCDM(Om0=0.3,Tcmb0 = 2.725,H0 = 67.11)
+    tuniv = np.round(cosmo.age(zred[0]).to('Gyr').value,decimals=1) #Gyr, age at z=0 #CHANGE
+    #space = 0.1
+    agelims = np.linspace(8,np.log10(tuniv)+9,9)
+    agelims = [0]+agelims.tolist()
+    #print(agelims)
+    #print(zred)
+    agebins = np.array([agelims[:-1], agelims[1:]])
+    #print(np.shape(agebins))
+    return agebins.T
 
 def build_model(spec_dir,z_idx,**kwargs):
 
@@ -77,8 +97,9 @@ def build_model(spec_dir,z_idx,**kwargs):
     print('building model')
     model_params = []
     #basics
-    model_params.append({'name': "lumdist", "N": 1, "isfree": False,"init": dl.value,"units": "Mpc"})
-    model_params.append({'name':'zred','N':1,'isfree':False,'init':z})
+    model_params.append({'name': "lumdist", "N": 1, "isfree": False,"init": dl.value,"units": "Mpc",'depends_on':lum_dist_calc})
+    #model_params.append({'name': "lumdist", "N": 1, "isfree": False,"init": dl.value,"units": "Mpc"})
+    model_params.append({'name':'zred','N':1,'isfree':True,'init':z,'prior':priors.Uniform(mini=0., maxi=8.)})
 
     model_params.append({'name': 'imf_type', 'N': 1,'isfree': False,'init': 1})
     model_params.append({'name': 'dust_type', 'N': 1,'isfree': False,'init': 2,'prior': None})
@@ -94,9 +115,7 @@ def build_model(spec_dir,z_idx,**kwargs):
     #M-Z
     model_params.append({'name': 'logmass', 'N': 1,'isfree': True,'init': 8.0,'prior': priors.Uniform(mini=7., maxi=12.)})
     
-    # CHANGE
     model_params.append({'name': 'logzsol', 'N': 1,'isfree': True,'init': -0.5,'prior': priors.Uniform(mini=-1.5, maxi=0.5)})
-    #model_params.append({'name': 'logzsol', 'N': 1,'isfree': False,'init': 0,'prior': None})
 
     model_params.append({'name': "sfh", "N": 1, "isfree": False, "init": 3})
     model_params.append({'name': "mass", 'N': 3, 'isfree': False, 'init': 1., 'depends_on':zfrac_to_masses_log})
@@ -106,6 +125,7 @@ def build_model(spec_dir,z_idx,**kwargs):
     
     #here we set the number and location of the timebins, and edit the other SFH parameters to match in size
     n = [p['name'] for p in model_params]
+    
     tuniv = np.round(cosmo.age(z).to('Gyr').value,decimals=1) #Gyr, age at z=0 #CHANGE
     #space = 0.1
     
@@ -128,6 +148,7 @@ def build_model(spec_dir,z_idx,**kwargs):
     
     model_params[n.index('mass')]['N'] = nbins
     model_params[n.index('agebins')]['N'] = nbins
+    model_params[n.index('agebins')]['depends_on'] = age_bin_calc
     model_params[n.index('agebins')]['init'] = agebins.T
     model_params[n.index('z_fraction')]['N'] = nbins-1
     model_params[n.index('z_fraction')]['init'] = zinit
@@ -214,7 +235,7 @@ if __name__ == '__main__':
         prosp_out_folder = 'limited_photometry'
     else:
         raise Exception('not valid full_phot flag')
-    
+
     try:
         root_override = str(sys.argv[9])
         path_base = root_override
@@ -223,7 +244,7 @@ if __name__ == '__main__':
 
     phot_file = f'{path_base}/ml_data/all_filter_{sim_id}_snap{snap}.npz'
 
-    outfile = f'{path_base}/prosp_runs/{sim_id}/snap{snap}/{prosp_out_folder}/prosp_run_{sim_id}_snap{snap}_galaxy{gal_num}_z{z_idx}_{extra_label}.h5'
+    outfile = f'{path_base}/prosp_runs/{sim_id}/snap{snap}/{prosp_out_folder}/prosp_run_{sim_id}_snap{snap}_galaxy{gal_num}_z{z_idx}{extra_label}.h5'
     print(outfile)
     #raise Exception()
     obs, model, sps = build_all(phot_file,gal_num,SNR,z_idx,filt_file,**run_params)

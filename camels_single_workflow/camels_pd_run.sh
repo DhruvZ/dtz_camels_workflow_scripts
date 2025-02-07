@@ -19,7 +19,7 @@ echo "SIM TYPE:$sim_name"
 sim_id="${sim_name}_1P_p${run_1p_param}_${run_1p_num}"
 
 # snap list: 0,1,2,4,10,19,33
-# 14 18 24 32 44 62 90
+# updated snap list: 14 18 24 32 44 62 90
 
 
 for snum in 14 18 24 32 44 62 90 
