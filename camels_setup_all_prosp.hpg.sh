@@ -60,11 +60,11 @@ echo "filt_file=\${3}">>$qsubfile
 echo "snr=\${4}">>$qsubfile
 echo "extra_label=\${5}">>$qsubfile
 echo "root_override=\"${base_path}\"">>$qsubfile
-echo "z_known=\${7}">>$qsubfile
+echo "z_known=\${6}">>$qsubfile
 
 echo "cd \"/orange/narayanan/d.zimmerman/camels_scripts/\"">>$qsubfile
 
-echo -e "if [ \"\$z_known\" = \"0\" ]">>$qsubfile
+echo -e "if [ \"\$z_known\" = \"1\" ]">>$qsubfile
 echo -e "then">>$qsubfile
 echo -e "\tpython run_prosp_ml_sed.py \${sim_id} \${snap} \${gal_num} \${full_phot} \${z_idx} \${filt_file} \${snr} \${extra_label} \${root_override}">>$qsubfile
 echo -e "\tpython process_prosp_output_camels_dtz.py \${sim_id} \${snap} \${gal_num} \${full_phot} \${z_idx} \${extra_label} \${root_override}">>$qsubfile
