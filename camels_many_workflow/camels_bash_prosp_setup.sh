@@ -31,10 +31,10 @@ do
 	sim_id="${sim_name}_1P_p${run_1p_param}_${run_1p_num}"
 	echo "SIM ID:$sim_id"
 	# 14 18 24 32 44 62 90
-	for snap in 14
+	for snap in 14 18 24 32 44 62 90
 	do
 		echo ${snap}
-		python "/orange/narayanan/d.zimmerman/camels_scripts/prospector_setup.py" ${sim_id} ${snap}
+		python /orange/narayanan/d.zimmerman/camels_scripts/prospector_setup.py ${sim_id} ${snap}
 		# ${sim_id} ${snap}"
 	done
 	echo -e "\n"

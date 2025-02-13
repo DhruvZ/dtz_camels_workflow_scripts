@@ -86,8 +86,8 @@ def build_model(spec_dir,z_idx,**kwargs):
     #model_params.append({'name': 'dust2', 'N': 1,'isfree': False, 'init': 0.0,'prior': None})
     model_params.append({'name': 'add_dust_emission', 'N': 1,'isfree': False,'init': 1,'prior': None})
     model_params.append({'name': 'duste_gamma', 'N': 1,'isfree': True,'init': 0.01,'prior': priors.TopHat(mini=0.0, maxi=1.0)})
-    model_params.append({'name': 'duste_umin', 'N': 1,'isfree': True,'init': 1.0,'prior': priors.TopHat(mini=0.1, maxi=20.0)})
-    model_params.append({'name': 'duste_qpah', 'N': 1,'isfree': True,'init': 3.0,'prior': priors.TopHat(mini=0.0, maxi=6.0)})
+    model_params.append({'name': 'duste_umin', 'N': 1,'isfree': True,'init': 1.0,'prior': priors.TopHat(mini=0.1, maxi=25.0)})
+    model_params.append({'name': 'duste_qpah', 'N': 1,'isfree': True,'init': 3.0,'prior': priors.TopHat(mini=0.0, maxi=10.0)})
     
     model_params.append({'name': 'add_agb_dust_model', 'N': 1,'isfree': False,'init': 0})
     
@@ -223,7 +223,7 @@ if __name__ == '__main__':
 
     phot_file = f'{path_base}/ml_data/all_filter_{sim_id}_snap{snap}.npz'
 
-    outfile = f'{path_base}/prosp_runs/{sim_id}/snap{snap}/{prosp_out_folder}/prosp_run_{sim_id}_snap{snap}_galaxy{gal_num}_z{z_idx}_{extra_label}.h5'
+    outfile = f'{path_base}/prosp_runs/{sim_id}/snap{snap}/{prosp_out_folder}/prosp_run_{sim_id}_snap{snap}_galaxy{gal_num}_z{z_idx}{extra_label}.h5'
     print(outfile)
     #raise Exception()
     obs, model, sps = build_all(phot_file,gal_num,SNR,z_idx,filt_file,**run_params)

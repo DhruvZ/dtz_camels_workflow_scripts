@@ -8,7 +8,7 @@ from corner import quantile
 from prospect.models import transforms
 from prospect.sources import FastStepBasis
 import matplotlib.pyplot as plt
-import run_prosp_ml_sed_ztest
+import run_prosp_ml_sed_zvar
 import fsps
 
 sps = FastStepBasis()
@@ -89,7 +89,7 @@ def get_sfh_z_var(res, mod):
     time_chain = []
     sfr_chain = []
     for i in idx:
-        agebins =  run_prosp_ml_sed_ztest.age_bin_calc([res['chain'][i,thetas.index('zred')]])
+        agebins =  run_prosp_ml_sed_zvar.age_bin_calc([res['chain'][i,thetas.index('zred')]])
         agebins_yrs = 10**agebins.T
         bin_edges = np.unique(agebins_yrs)
         dt = agebins_yrs[1, :] - agebins_yrs[0, :]
@@ -116,7 +116,7 @@ phot_wave, pd_wave=[],[]
 #res, obs, model = pread.results_from(f'/home/d.zimmerman/prospector_tutorial/g100_nonpara_backup.h5')
 res, obs, model = pread.results_from(prosp_file)
 print(model)
-model = run_prosp_ml_sed_ztest.build_model(phot_file,z_idx)
+model = run_prosp_ml_sed_zvar.build_model(phot_file,z_idx)
 print(model)
 model_params = model.theta_labels()
 spec, phot, mass_frac, dmass = [], [], [], []
@@ -180,7 +180,7 @@ phot_wave.append([x.wave_mean for x in obs['filters']])
 pd_sed.append(obs['rest_sed'])
 pd_wave.append(obs['wav'])
 
-
+'''
 for i in range(5000):
     plt.plot(sps.wavelengths*(1+z_red[i]),spec[i],alpha=0.1)
     #plt.axvline((sps.wavelengths*(1+z_red[i]))[0])#,color='black',linestyle='--',alpha=0.01)
@@ -208,7 +208,7 @@ plt.close()
 plt.hist(z_red)
 plt.savefig('/home/d.zimmerman/figures/test_zsfh_z.png')
 plt.close()
-
+'''
 
 spec_50, spec_16, spec_84 = [], [], []
 for i in range(len(spec[0])):
@@ -216,6 +216,9 @@ for i in range(len(spec[0])):
     spec_50.append(quantiles[1])
     spec_16.append(quantiles[0])
     spec_84.append(quantiles[2])
+
+
+
 
 """
 Now we save results to two pickle files, one with the SED info and one with the estimates for 
