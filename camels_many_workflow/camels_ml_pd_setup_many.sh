@@ -23,7 +23,7 @@ conda activate /blue/narayanan/d.zimmerman/code_environments/master_el8_environm
 module load git
 #module load gcc/12.2.0
 module load intel/2020.0.166
-module load openmpi/4.1.5
+module load openmpi/4.1.6
 module load hdf5/1.14.1
 
 
@@ -41,11 +41,11 @@ subfind_out_name="groups"
 if [ "$sim" = "0" ]
 then
         sim_name="SIMBA"
-	#mkdir /orange/narayanan/d.zimmerman/camels_results/filtered/${sim_name}_1P_p${run_1p_param}_${run_1p_num}/snap${SLURM_ARRAY_TASK_ID}
+	mkdir /orange/narayanan/d.zimmerman/camels_results/filtered/${sim_name}_1P_p${run_1p_param}_${run_1p_num}/snap${SLURM_ARRAY_TASK_ID}
 elif [ "$sim" = "1" ]
 then
         sim_name="IllustrisTNG"
-	#mkdir /orange/narayanan/d.zimmerman/camels_results/filtered/${sim_name}_1P_p${run_1p_param}_${run_1p_num}/snap${SLURM_ARRAY_TASK_ID}
+	mkdir /orange/narayanan/d.zimmerman/camels_results/filtered/${sim_name}_1P_p${run_1p_param}_${run_1p_num}/snap${SLURM_ARRAY_TASK_ID}
 else
         sim_name="failed - 1 or 0 not entered"
 fi
@@ -58,31 +58,31 @@ echo ${sim_id}
 echo $SLURM_ARRAY_TASK_ID
 
 
-#if [ $(($SLURM_ARRAY_TASK_ID)) -lt 10 ]
-#then
-#        cp /orange/narayanan/d.zimmerman/camels_results/catalogs_loaded/${sim_id}/${caes_in_name}_00${SLURM_ARRAY_TASK_ID}.hdf5 /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/${sim_id}/${caes_out_name}_${SLURM_ARRAY_TASK_ID}.hdf5
-#        cp /orange/narayanan/d.zimmerman/camels_results/catalogs_loaded/${sim_id}/${subfind_in_name}_00${SLURM_ARRAY_TASK_ID}.hdf5 /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/${sim_id}/${subfind_out_name}_${SLURM_ARRAY_TASK_ID}.hdf5
-#elif [ $(($SLURM_ARRAY_TASK_ID)) -lt 100 ]
-#then
-#        cp /orange/narayanan/d.zimmerman/camels_results/catalogs_loaded/${sim_id}/${caes_in_name}_0${SLURM_ARRAY_TASK_ID}.hdf5 /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/${sim_id}/${caes_out_name}_${SLURM_ARRAY_TASK_ID}.hdf5
-#        cp /orange/narayanan/d.zimmerman/camels_results/catalogs_loaded/${sim_id}/${subfind_in_name}_0${SLURM_ARRAY_TASK_ID}.hdf5 /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/${sim_id}/${subfind_out_name}_${SLURM_ARRAY_TASK_ID}.hdf5
-#else
-#        cp /orange/narayanan/d.zimmerman/camels_results/catalogs_loaded/${sim_id}/${caes_in_name}_${SLURM_ARRAY_TASK_ID}.hdf5 /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/${sim_id}/${caes_out_name}_${SLURM_ARRAY_TASK_ID}.hdf5
-#        cp /orange/narayanan/d.zimmerman/camels_results/catalogs_loaded/${sim_id}/${subfind_in_name}_${SLURM_ARRAY_TASK_ID}.hdf5 /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/${sim_id}/${subfind_out_name}_${SLURM_ARRAY_TASK_ID}.hdf5
-#fi
+if [ $(($SLURM_ARRAY_TASK_ID)) -lt 10 ]
+then
+        cp /orange/narayanan/d.zimmerman/camels_results/catalogs_loaded/${sim_id}/${caes_in_name}_00${SLURM_ARRAY_TASK_ID}.hdf5 /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/${sim_id}/${caes_out_name}_${SLURM_ARRAY_TASK_ID}.hdf5
+        cp /orange/narayanan/d.zimmerman/camels_results/catalogs_loaded/${sim_id}/${subfind_in_name}_00${SLURM_ARRAY_TASK_ID}.hdf5 /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/${sim_id}/${subfind_out_name}_${SLURM_ARRAY_TASK_ID}.hdf5
+elif [ $(($SLURM_ARRAY_TASK_ID)) -lt 100 ]
+then
+        cp /orange/narayanan/d.zimmerman/camels_results/catalogs_loaded/${sim_id}/${caes_in_name}_0${SLURM_ARRAY_TASK_ID}.hdf5 /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/${sim_id}/${caes_out_name}_${SLURM_ARRAY_TASK_ID}.hdf5
+        cp /orange/narayanan/d.zimmerman/camels_results/catalogs_loaded/${sim_id}/${subfind_in_name}_0${SLURM_ARRAY_TASK_ID}.hdf5 /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/${sim_id}/${subfind_out_name}_${SLURM_ARRAY_TASK_ID}.hdf5
+else
+        cp /orange/narayanan/d.zimmerman/camels_results/catalogs_loaded/${sim_id}/${caes_in_name}_${SLURM_ARRAY_TASK_ID}.hdf5 /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/${sim_id}/${caes_out_name}_${SLURM_ARRAY_TASK_ID}.hdf5
+        cp /orange/narayanan/d.zimmerman/camels_results/catalogs_loaded/${sim_id}/${subfind_in_name}_${SLURM_ARRAY_TASK_ID}.hdf5 /orange/narayanan/d.zimmerman/camels_results/catalogs_saved/${sim_id}/${subfind_out_name}_${SLURM_ARRAY_TASK_ID}.hdf5
+fi
 
 
 if [ "${sim_name}" = "SIMBA" ]
 then
-        #python /orange/narayanan/d.zimmerman/camels_scripts/filter_simba_camels_setup.py $sim_name $run_1p_param $run_1p_num $SLURM_ARRAY_TASK_ID -1
-        #python /orange/narayanan/d.zimmerman/camels_scripts/galaxy_positions.py ${sim_id} ${SLURM_ARRAY_TASK_ID}
-        #python /orange/narayanan/d.zimmerman/camels_scripts/caesar_good_gal_script.py ${sim_id} ${SLURM_ARRAY_TASK_ID}
+        python /orange/narayanan/d.zimmerman/camels_scripts/filter_simba_camels_setup.py $sim_name $run_1p_param $run_1p_num $SLURM_ARRAY_TASK_ID -1
+        python /orange/narayanan/d.zimmerman/camels_scripts/galaxy_positions.py ${sim_id} ${SLURM_ARRAY_TASK_ID}
+        python /orange/narayanan/d.zimmerman/camels_scripts/caesar_good_gal_script.py ${sim_id} ${SLURM_ARRAY_TASK_ID}
         python /orange/narayanan/d.zimmerman/camels_scripts/powderday_setup.py ${sim_id} ${SLURM_ARRAY_TASK_ID}
-        #cp /orange/narayanan/d.zimmerman/camels_scripts/parameters_master_camels_simba.py /orange/narayanan/d.zimmerman/camels_results/pd_scripts/${sim_id}/snap${SLURM_ARRAY_TASK_ID}/parameters_master_camels.py
+        cp /orange/narayanan/d.zimmerman/camels_scripts/parameters_master_camels_simba.py /orange/narayanan/d.zimmerman/camels_results/pd_scripts/${sim_id}/snap${SLURM_ARRAY_TASK_ID}/parameters_master_camels.py
 else
-        #python /orange/narayanan/d.zimmerman/camels_scripts/filter_tng_camels_setup.py $sim_name $run_1p_param $run_1p_num $SLURM_ARRAY_TASK_ID -1
-        #python /orange/narayanan/d.zimmerman/camels_scripts/galaxy_positions.py ${sim_id} ${SLURM_ARRAY_TASK_ID}
-        #python /orange/narayanan/d.zimmerman/camels_scripts/subfind_good_gal_script.py ${sim_id} ${SLURM_ARRAY_TASK_ID}
+        python /orange/narayanan/d.zimmerman/camels_scripts/filter_tng_camels_setup.py $sim_name $run_1p_param $run_1p_num $SLURM_ARRAY_TASK_ID -1
+        python /orange/narayanan/d.zimmerman/camels_scripts/galaxy_positions.py ${sim_id} ${SLURM_ARRAY_TASK_ID}
+        python /orange/narayanan/d.zimmerman/camels_scripts/subfind_good_gal_script.py ${sim_id} ${SLURM_ARRAY_TASK_ID}
         python /orange/narayanan/d.zimmerman/camels_scripts/powderday_setup.py ${sim_id} ${SLURM_ARRAY_TASK_ID}
-        #cp /orange/narayanan/d.zimmerman/camels_scripts/parameters_master_camels_illustris.py /orange/narayanan/d.zimmerman/camels_results/pd_scripts/${sim_id}/snap${SLURM_ARRAY_TASK_ID}/parameters_master_camels.py
+        cp /orange/narayanan/d.zimmerman/camels_scripts/parameters_master_camels_illustris.py /orange/narayanan/d.zimmerman/camels_results/pd_scripts/${sim_id}/snap${SLURM_ARRAY_TASK_ID}/parameters_master_camels.py
 fi

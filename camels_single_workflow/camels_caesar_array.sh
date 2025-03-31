@@ -20,8 +20,8 @@ conda activate /blue/narayanan/d.zimmerman/code_environments/caesar_el8_environm
 
 module load git
 module load gcc/12.2.0
-module load openmpi/4.1.5
-module load hdf5/1.14.1
+module load openmpi/4.1.6
+module load hdf5/1.14.5
 
 cd /orange/narayanan/d.zimmerman/camels_scripts/
 

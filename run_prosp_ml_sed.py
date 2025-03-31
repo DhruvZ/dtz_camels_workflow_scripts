@@ -10,7 +10,7 @@ from prospect.fitting import fit_model
 import sys, os
 #from astropy.cosmology import Planck13
 from astropy.cosmology import FlatLambdaCDM
-from hyperion.model import ModelOutput
+#from hyperion.model import ModelOutput
 from astropy import units as u
 from astropy import constants
 
@@ -81,9 +81,21 @@ def build_model(spec_dir,z_idx,**kwargs):
     model_params.append({'name':'zred','N':1,'isfree':False,'init':z})
 
     model_params.append({'name': 'imf_type', 'N': 1,'isfree': False,'init': 1})
+    
     model_params.append({'name': 'dust_type', 'N': 1,'isfree': False,'init': 2,'prior': None})
-    model_params.append({'name': 'dust2', 'N': 1,'isfree': True, 'init': 0.1,'prior': priors.TopHat(mini=0.0, maxi=5.0)})
-    #model_params.append({'name': 'dust2', 'N': 1,'isfree': False, 'init': 0.0,'prior': None})
+    model_params.append({'name': 'dust2', 'N': 1,'isfree': True, 'init': 0.1,'prior': priors.TopHat(mini=0.0, maxi=10.0)})
+
+    #model_params.append({'name': 'dust_type', 'N': 1,'isfree': False,'init': 0,'prior': None})
+    #model_params.append({'name': 'dust2', 'N': 1,'isfree': True, 'init': 0.1,'prior': priors.TopHat(mini=0.0, maxi=5.0)})
+    #model_params.append({'name': 'dust_index', 'N': 1,'isfree': True, 'init': -0.7,'prior': priors.TopHat(mini=-3.0, maxi=0.0)})
+
+    #model_params.append({'name': 'dust_type', 'N': 1,'isfree': False,'init': 1,'prior': None})    
+    #model_params.append({'name': 'dust1', 'N': 1,'isfree': True, 'init': 0.1,'prior': priors.TopHat(mini=0.0, maxi=5.0)})
+    #model_params.append({'name': 'dust1_index', 'N': 1,'isfree': True, 'init': -1.0,'prior': priors.TopHat(mini=-3.0, maxi=0.0)})
+    #model_params.append({'name': 'dust2', 'N': 1,'isfree': True, 'init': 0.1,'prior': priors.TopHat(mini=0.0, maxi=5.0)})
+    #model_params.append({'name': 'mwr', 'N': 1,'isfree': True, 'init': 3.1,'prior': priors.TopHat(mini=0.0, maxi=10.0)})
+    #model_params.append({'name': 'uvb', 'N': 1,'isfree': True, 'init': 1.0,'prior': priors.TopHat(mini=0.0, maxi=5.0)})
+    
     model_params.append({'name': 'add_dust_emission', 'N': 1,'isfree': False,'init': 1,'prior': None})
     model_params.append({'name': 'duste_gamma', 'N': 1,'isfree': True,'init': 0.01,'prior': priors.TopHat(mini=0.0, maxi=1.0)})
     model_params.append({'name': 'duste_umin', 'N': 1,'isfree': True,'init': 1.0,'prior': priors.TopHat(mini=0.1, maxi=25.0)})
@@ -92,10 +104,10 @@ def build_model(spec_dir,z_idx,**kwargs):
     #model_params.append({'name': 'add_agb_dust_model', 'N': 1,'isfree': False,'init': 0})
     
     #M-Z
-    model_params.append({'name': 'logmass', 'N': 1,'isfree': True,'init': 8.0,'prior': priors.Uniform(mini=7., maxi=12.)})
+    model_params.append({'name': 'logmass', 'N': 1,'isfree': True,'init': 8.0,'prior': priors.Uniform(mini=7., maxi=14.)})
     
     # CHANGE
-    model_params.append({'name': 'logzsol', 'N': 1,'isfree': True,'init': -0.5,'prior': priors.Uniform(mini=-1.5, maxi=0.5)})
+    model_params.append({'name': 'logzsol', 'N': 1,'isfree': True,'init': -0.5,'prior': priors.Uniform(mini=-3.0, maxi=0.5)})
     #model_params.append({'name': 'logzsol', 'N': 1,'isfree': False,'init': 0,'prior': None})
 
     model_params.append({'name': "sfh", "N": 1, "isfree": False, "init": 3})

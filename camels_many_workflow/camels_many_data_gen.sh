@@ -27,7 +27,7 @@ conda activate /blue/narayanan/d.zimmerman/code_environments/master_el8_environm
 module load git
 #module load gcc/12.2.0
 module load intel/2020.0.166
-module load openmpi/4.1.5
+module load openmpi/4.1.6
 module load hdf5/1.14.1
 
 #Notes of interest:

@@ -27,11 +27,11 @@ echo $qsubfile
 
 echo "#! /bin/bash" >>$qsubfile
 echo "#SBATCH --job-name=${sim_id}.snap${snap}_prosp" >>$qsubfile
-echo "#SBATCH --output=${sim_id}.snap${snap}.o" >>$qsubfile
-echo "#SBATCH --error=${sim_id}.snap${snap}.e" >>$qsubfile
+echo "#SBATCH --output=${sim_id}.snap${snap}_%A-%a.o" >>$qsubfile
+echo "#SBATCH --error=${sim_id}.snap${snap}_%A-%a.e" >>$qsubfile
 echo "#SBATCH --mail-type=ALL" >>$qsubfile
 echo "#SBATCH --mail-user=d.zimmerman@ufl.edu" >>$qsubfile
-echo "#SBATCH --time=24:00:00" >>$qsubfile
+echo "#SBATCH --time=48:00:00" >>$qsubfile
 echo "#SBATCH --mem=10gb">>$qsubfile
 echo "#SBATCH --account=narayanan">>$qsubfile
 echo "#SBATCH --qos=narayanan-b">>$qsubfile
@@ -46,7 +46,7 @@ echo "conda activate /blue/narayanan/d.zimmerman/code_environments/master_el8_en
 echo -e "\n">>$qsubfile
 echo "module load git">>$qsubfile
 echo "module load intel/2020.0.166">>$qsubfile
-echo "module load openmpi/4.1.5">>$qsubfile
+echo "module load openmpi/4.1.6">>$qsubfile
 echo "module load hdf5/1.14.1">>$qsubfile
 echo -e "\n">>$qsubfile
 

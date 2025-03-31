@@ -132,7 +132,7 @@ echo "#SBATCH --nodes=$n_nodes">>$qsubfile
 echo "#SBATCH --mem-per-cpu=3800">>$qsubfile
 echo "#SBATCH --account=narayanan">>$qsubfile
 echo "#SBATCH --qos=narayanan-b">>$qsubfile
-echo "#SBATCH --array=0-${gal_count}%10">>$qsubfile
+echo "#SBATCH --array=0-${gal_count}%30">>$qsubfile
 echo -e "\n">>$qsubfile
 echo -e "\n" >>$qsubfile
 
@@ -143,7 +143,7 @@ echo "conda activate /blue/narayanan/d.zimmerman/code_environments/master_el8_en
 echo -e "\n">>$qsubfile
 echo "module load git">>$qsubfile
 echo "module load intel/2020.0.166">>$qsubfile
-echo "module load openmpi/4.1.5">>$qsubfile
+echo "module load openmpi/4.1.6">>$qsubfile
 echo "module load hdf5/1.14.1">>$qsubfile
 echo -e "\n">>$qsubfile
 
