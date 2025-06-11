@@ -70,7 +70,7 @@ def get_sfh(res, mod):
         sfrout[::2] = sfr
         sfrout[1::2] = sfr
         sfr_chain.append(sfrout)
-    return (t[-1] - t[::-1])/1e9, sfr_chain
+    return (t[-1] - t[::-1])/1e9, sfr_chain[::-1]
 
 
 mass_quan = []
@@ -132,6 +132,11 @@ for i in range(len(sfh_time)):
     sfh_16.append(sfh_quans[0])
     sfh_84.append(sfh_quans[2])
 
+
+sfr100_16 = sfh_16[-1]
+sfr100_50 = sfh_50[-1]
+sfr100_84 = sfh_84[-1]
+
 pd_phot.append(obs['maggies'])
 phot_wave.append([x.wave_mean for x in obs['filters']])
 
@@ -159,7 +164,7 @@ The masses and metallicities are saved as the median and the 16th-84th quantiles
 
 
 np.savez(outfile_prop,log_smass_quantiles = mass_quan, sfh_time = sfh_time, sfh_16 = sfh_16, sfh_50 = sfh_50, sfh_84 = sfh_84,
-              logZsol = metal_quan, log_dmass_quantiles = dmass_quan,log_fmass_quantiles = raw_quan)
+              logZsol = metal_quan, log_dmass_quantiles = dmass_quan,log_fmass_quantiles = raw_quan,sfr100_quantiles = [sfr100_16,sfr100_50,sfr100_84])
 np.savez(outfile_spec,powderday_sed = pd_sed[0], powderday_wave = [item for item in pd_wave][0],
         spec_wave = sps.wavelengths*(1+np.load(phot_file)['z'][z_idx]),spec_50 = spec_50, spec_16 = spec_16, spec_84 = spec_84, phot = pd_phot, phot_wave = phot_wave)
 
