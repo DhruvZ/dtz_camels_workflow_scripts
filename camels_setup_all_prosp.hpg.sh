@@ -35,6 +35,9 @@ echo "#SBATCH --time=48:00:00" >>$qsubfile
 echo "#SBATCH --mem=10gb">>$qsubfile
 echo "#SBATCH --account=narayanan">>$qsubfile
 echo "#SBATCH --qos=narayanan-b">>$qsubfile
+#echo "#SBATCH --account=paul.torrey">>$qsubfile
+#echo "#SBATCH --qos=paul.torrey-b">>$qsubfile
+
 echo "#SBATCH --array=0-${max_gal_id}">>$qsubfile
 echo -e "\n">>$qsubfile
 echo -e "\n" >>$qsubfile
@@ -42,12 +45,12 @@ echo -e "\n" >>$qsubfile
 echo "cd /home/d.zimmerman">>$qsubfile
 echo "module purge">>$qsubfile
 echo "source .bashrc">>$qsubfile
-echo "conda activate /blue/narayanan/d.zimmerman/code_environments/master_el8_environment">>$qsubfile
+echo "conda activate /blue/narayanan/d.zimmerman/code_environments/master_el9_environment">>$qsubfile
 echo -e "\n">>$qsubfile
 echo "module load git">>$qsubfile
-echo "module load intel/2020.0.166">>$qsubfile
-echo "module load openmpi/4.1.6">>$qsubfile
-echo "module load hdf5/1.14.1">>$qsubfile
+echo "module load intel/2025.1.0">>$qsubfile
+echo "module load openmpi/5.0.7">>$qsubfile
+echo "module load hdf5/1.14.6">>$qsubfile
 echo -e "\n">>$qsubfile
 
 

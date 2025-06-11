@@ -3,11 +3,11 @@ cd /home/d.zimmerman/
 source .bashrc
 module purge
 conda deactivate
-conda activate /blue/narayanan/d.zimmerman/code_environments/master_el8_environment
+conda activate /blue/narayanan/d.zimmerman/code_environments/master_el9_environment
 module load git
-module load intel/2020.0.166
-module load openmpi/4.1.6
-module load hdf5/1.14.1
+module load intel/2025.1.0
+module load openmpi/5.0.7
+module load hdf5/1.14.6
 ml
 cd /orange/narayanan/d.zimmerman/camels_scripts/
 snum_min=$1

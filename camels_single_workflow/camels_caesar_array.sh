@@ -16,12 +16,12 @@ cd /home/d.zimmerman
 module purge
 source .bashrc
 
-conda activate /blue/narayanan/d.zimmerman/code_environments/caesar_el8_environment
+conda activate /blue/narayanan/d.zimmerman/code_environments/master_el9_environment
 
 module load git
-module load gcc/12.2.0
-module load openmpi/4.1.6
-module load hdf5/1.14.5
+module load intel/2025.1.0
+module load openmpi/5.0.7
+module load hdf5/1.14.6
 
 cd /orange/narayanan/d.zimmerman/camels_scripts/
 

@@ -139,12 +139,12 @@ echo -e "\n" >>$qsubfile
 echo "cd /home/d.zimmerman">>$qsubfile
 echo "module purge">>$qsubfile
 echo "source .bashrc">>$qsubfile
-echo "conda activate /blue/narayanan/d.zimmerman/code_environments/master_el8_environment">>$qsubfile
+echo "conda activate /blue/narayanan/d.zimmerman/code_environments/master_el9_environment">>$qsubfile
 echo -e "\n">>$qsubfile
 echo "module load git">>$qsubfile
-echo "module load intel/2020.0.166">>$qsubfile
-echo "module load openmpi/4.1.6">>$qsubfile
-echo "module load hdf5/1.14.1">>$qsubfile
+echo "module load intel/2025.1.0">>$qsubfile
+echo "module load openmpi/5.0.7">>$qsubfile
+echo "module load hdf5/1.14.6">>$qsubfile
 echo -e "\n">>$qsubfile
 
 echo "ID=\$(awk '{if(NR==(n+1)) print int(\$0)}' n=\${SLURM_ARRAY_TASK_ID} /orange/narayanan/d.zimmerman/camels_results/filtered/${model_run_name}/snap${snap}/snap${snap}_gas_gals.txt)">>$qsubfile

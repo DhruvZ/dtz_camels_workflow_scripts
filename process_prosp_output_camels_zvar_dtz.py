@@ -238,5 +238,5 @@ The masses and metallicities are saved as the median and the 16th-84th quantiles
 np.savez(outfile_prop,log_smass_quantiles = mass_quan, sfh_time = sfh_time, sfh_16 = sfh_16, sfh_50 = sfh_50, sfh_84 = sfh_84,
               logZsol = metal_quan, log_dmass_quantiles = dmass_quan,log_fmass_quantiles = raw_quan,sfh_real = sfr_chain,z_real = z_red,z_quan = z_quan)
 np.savez(outfile_spec,powderday_sed = pd_sed[0], powderday_wave = [item for item in pd_wave][0],
-        spec_wave = sps.wavelengths,spec_50 = spec_50, spec_16 = spec_16, spec_84 = spec_84, phot = pd_phot, phot_wave = phot_wave,spec_real = )
+        spec_wave = sps.wavelengths,spec_50 = spec_50, spec_16 = spec_16, spec_84 = spec_84, phot = pd_phot, phot_wave = phot_wave)#,spec_real = )
 
